@@ -1,0 +1,30 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst p1.pio_disp3 -pg 1 -lvl 3 -y 310
+preplace inst p1.onchip_memory2_0 -pg 1 -lvl 3 -y 130
+preplace inst p1.pio_disp4 -pg 1 -lvl 3 -y 410
+preplace inst p1.nios2_gen2_0.reset_bridge -pg 1
+preplace inst p1.pio_disp5 -pg 1 -lvl 3 -y 510
+preplace inst p1.pio_disp6 -pg 1 -lvl 3 -y 610
+preplace inst p1.nios2_gen2_0.cpu -pg 1
+preplace inst p1 -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst p1.clk_0 -pg 1 -lvl 1 -y 180
+preplace inst p1.timer_0 -pg 1 -lvl 3 -y 210
+preplace inst p1.nios2_gen2_0.clock_bridge -pg 1
+preplace inst p1.pio_disp1 -pg 1 -lvl 3 -y 30
+preplace inst p1.nios2_gen2_0 -pg 1 -lvl 2 -y 160
+preplace inst p1.pio_disp2 -pg 1 -lvl 3 -y 710
+preplace netloc INTERCONNECT<net_container>p1</net_container>(MASTER)nios2_gen2_0.data_master,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)pio_disp1.s1,(SLAVE)pio_disp2.s1,(SLAVE)onchip_memory2_0.s1,(SLAVE)timer_0.s1,(SLAVE)pio_disp5.s1,(SLAVE)pio_disp6.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)pio_disp3.s1,(SLAVE)pio_disp4.s1) 1 1 2 440 120 840
+preplace netloc FAN_OUT<net_container>p1</net_container>(SLAVE)timer_0.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)nios2_gen2_0.clk,(SLAVE)pio_disp4.clk,(SLAVE)pio_disp2.clk,(MASTER)clk_0.clk,(SLAVE)pio_disp1.clk,(SLAVE)pio_disp6.clk,(SLAVE)pio_disp5.clk,(SLAVE)pio_disp3.clk) 1 1 2 400 80 800
+preplace netloc EXPORT<net_container>p1</net_container>(SLAVE)clk_0.clk_in,(SLAVE)p1.clk) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>p1</net_container>(SLAVE)onchip_memory2_0.reset1,(SLAVE)pio_disp3.reset,(SLAVE)pio_disp4.reset,(SLAVE)timer_0.reset,(MASTER)clk_0.clk_reset,(SLAVE)pio_disp5.reset,(SLAVE)pio_disp6.reset,(SLAVE)pio_disp2.reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)pio_disp1.reset) 1 1 2 420 100 820
+preplace netloc EXPORT<net_container>p1</net_container>(SLAVE)p1.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>p1</net_container>(SLAVE)p1.pio_disp3_external_connection,(SLAVE)pio_disp3.external_connection) 1 0 3 NJ 340 NJ 340 NJ
+preplace netloc EXPORT<net_container>p1</net_container>(SLAVE)pio_disp2.external_connection,(SLAVE)p1.pio_disp2_external_connection) 1 0 3 NJ 740 NJ 740 NJ
+preplace netloc EXPORT<net_container>p1</net_container>(SLAVE)p1.pio_disp1_external_connection,(SLAVE)pio_disp1.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>p1</net_container>(SLAVE)pio_disp6.external_connection,(SLAVE)p1.pio_disp6_external_connection) 1 0 3 NJ 640 NJ 640 NJ
+preplace netloc EXPORT<net_container>p1</net_container>(SLAVE)pio_disp5.external_connection,(SLAVE)p1.pio_disp5_external_connection) 1 0 3 NJ 540 NJ 540 NJ
+preplace netloc EXPORT<net_container>p1</net_container>(SLAVE)pio_disp4.external_connection,(SLAVE)p1.pio_disp4_external_connection) 1 0 3 NJ 440 NJ 440 NJ
+preplace netloc POINT_TO_POINT<net_container>p1</net_container>(MASTER)nios2_gen2_0.irq,(SLAVE)timer_0.irq) 1 2 1 860
+levelinfo -pg 1 0 190 1070
+levelinfo -hier p1 200 230 560 910 1060
