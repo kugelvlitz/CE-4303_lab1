@@ -1,0 +1,818 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o (alt_load)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o (alt_main)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o) (alt_irq_init)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o) (alt_avalon_timer_sc_init)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o) (close)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o) (alt_fd_list)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o) (_do_ctors)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o) (_do_dtors)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o) (alt_errno)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o) (alt_ic_isr_register)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o) (alt_release_fd)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o) (_alt_tick_rate)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o) (alt_instruction_exception_entry)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o) (atexit)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o) (exit)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o) (_global_impure_ptr)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+                              C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o) (errno)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o) (__register_exitproc)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o) (__call_exitprocs)
+C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+new_sdram_controller_0 0x0000000000000000 0x0000000001000000
+reset            0x0000000001000000 0x0000000000000020
+onchip_memory2_0 0x0000000001000020 0x0000000000000fe0
+onchip_memory2_1 0x0000000001001000 0x0000000000001000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+LOAD obj/default/hello_world.o
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a
+LOAD C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a
+                0x0000000000000000                __alt_mem_new_sdram_controller_0 = 0x0
+                0x0000000001000000                __alt_mem_onchip_memory2_0 = 0x1000000
+                0x0000000001001000                __alt_mem_onchip_memory2_1 = 0x1001000
+
+.entry          0x0000000001000000       0x20
+ *(.entry)
+ .entry         0x0000000001000000       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+                0x0000000001000000                __reset
+
+.exceptions     0x0000000001000020      0x204
+                0x0000000001000020                PROVIDE (__ram_exceptions_start = ABSOLUTE (.))
+                0x0000000001000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x0000000001000020        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+                0x0000000001000020                alt_irq_entry
+ .exceptions.entry.label
+                0x0000000001000020        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+                0x0000000001000020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x0000000001000020       0x54 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x0000000001000074       0x10 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x0000000001000084        0x4 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x0000000001000088        0x4 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000100008c        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000100008c        0x8 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x0000000001000094       0x14 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00000000010000a8        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00000000010000a8        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00000000010000a8       0x54 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x00000000010000fc       0xc8 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+                0x00000000010000fc                alt_irq_handler
+ .exceptions    0x00000000010001c4       0x60 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00000000010001c4                alt_instruction_exception_entry
+                0x0000000001000224                PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
+                0x0000000001000020                PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
+
+.text           0x0000000001000224      0xdc4
+                [!provide]                        PROVIDE (stext = ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000001000224       0x3c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+                0x0000000001000224                _start
+ .text          0x0000000001000260       0xd4 obj/default/hello_world.o
+                0x0000000001000260                main
+ .text          0x0000000001000334       0xec C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+                0x000000000100039c                alt_load
+ .text          0x0000000001000420       0x60 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+                0x0000000001000420                alt_main
+ .text          0x0000000001000480       0x7c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+                0x0000000001000480                alt_irq_init
+                0x00000000010004bc                alt_sys_init
+ .text          0x00000000010004fc      0x100 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x0000000001000578                alt_avalon_timer_sc_init
+ .text          0x00000000010005fc      0x118 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+                0x0000000001000638                close
+ .text          0x0000000001000714       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000001000714                alt_dcache_flush_all
+ .text          0x0000000001000734       0x2c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+ .text          0x0000000001000760       0x64 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+                0x0000000001000760                _do_ctors
+ .text          0x00000000010007c4       0x64 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+                0x00000000010007c4                _do_dtors
+ .text          0x0000000001000828        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+ .text          0x0000000001000828       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000001000828                alt_icache_flush_all
+ .text          0x0000000001000848      0x1b0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+                0x0000000001000848                alt_ic_isr_register
+                0x0000000001000898                alt_ic_irq_enable
+                0x0000000001000920                alt_ic_irq_disable
+                0x00000000010009ac                alt_ic_irq_enabled
+ .text          0x00000000010009f8       0xe8 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+                0x00000000010009f8                alt_iic_isr_register
+ .text          0x0000000001000ae0        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x0000000001000ae0        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x0000000001000ae0        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000001000ae0       0x70 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+                0x0000000001000ae0                alt_release_fd
+ .text          0x0000000001000b50      0x1ac C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+                0x0000000001000b50                alt_alarm_stop
+                0x0000000001000bf4                alt_tick
+ .text          0x0000000001000cfc       0x24 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000001000cfc                altera_nios2_gen2_irq_init
+ .text          0x0000000001000d20        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x0000000001000d20       0x98 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000001000d20                alt_exception_cause_generated_bad_addr
+ .text          0x0000000001000db8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .text.atexit   0x0000000001000db8       0x14 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                0x0000000001000db8                atexit
+ .text          0x0000000001000dcc        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .text.exit     0x0000000001000dcc       0x34 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+                0x0000000001000dcc                exit
+ .text          0x0000000001000e00        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .text          0x0000000001000e00        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .text          0x0000000001000e00        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .text.__register_exitproc
+                0x0000000001000e00       0x90 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+                0x0000000001000e00                __register_exitproc
+ .text          0x0000000001000e90        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x0000000001000e90      0x120 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                0x0000000001000e90                __call_exitprocs
+ .text          0x0000000001000fb0       0x38 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+                0x0000000001000fb0                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext = ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0000000001000fe8                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start = ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start = ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x0000000001000fe8                PROVIDE (__CTOR_LIST__ = ABSOLUTE (.))
+ *(.ctors)
+ *(SORT_BY_NAME(.ctors.*))
+                0x0000000001000fe8                PROVIDE (__CTOR_END__ = ABSOLUTE (.))
+                0x0000000001000fe8                PROVIDE (__DTOR_LIST__ = ABSOLUTE (.))
+ *(.dtors)
+ *(SORT_BY_NAME(.dtors.*))
+                0x0000000001000fe8                PROVIDE (__DTOR_END__ = ABSOLUTE (.))
+ *(.jcr)
+                0x0000000001000fe8                . = ALIGN (0x4)
+
+.rodata         0x0000000000000000        0xc load address 0x0000000001000fe8
+                0x0000000000000000                PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x0000000000000000                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000000000        0xa C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x000000000000000c                . = ALIGN (0x4)
+ *fill*         0x000000000000000a        0x2 
+                0x000000000000000c                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x0000000001000fe8                PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+
+.rwdata         0x000000000000000c      0x5f8 load address 0x0000000001000ff4
+                0x000000000000000c                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x000000000000000c                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000000000c        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+ .data          0x000000000000000c        0x0 obj/default/hello_world.o
+ .data          0x000000000000000c        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+ .data          0x000000000000000c        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+ .data          0x000000000000000c        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+ .data          0x000000000000000c        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x000000000000000c        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+ .data          0x000000000000000c        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x000000000000000c      0x1a8 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+                0x000000000000000c                alt_dev_null
+                0x0000000000000034                alt_fd_list
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x00000000000001b4        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x00000000000001b4        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .data          0x00000000000001b4        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .data          0x00000000000001b4        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .data.impure_data
+                0x00000000000001b4      0x424 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .data          0x00000000000005d8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .data          0x00000000000005d8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .data          0x00000000000005d8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .data          0x00000000000005d8        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+                0x00000000000085d8                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp = _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x00000000000005d8       0x14 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+                0x00000000000005d8                alt_fs_list
+                0x00000000000005e0                alt_dev_list
+                0x00000000000005e8                alt_max_fd
+ .sdata         0x00000000000005ec        0x4 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+                0x00000000000005ec                alt_errno
+ .sdata         0x00000000000005f0        0x4 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+                0x00000000000005f0                alt_priority_mask
+ .sdata         0x00000000000005f4        0x8 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+                0x00000000000005f4                alt_alarm_list
+ .sdata._global_impure_ptr
+                0x00000000000005fc        0x4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                0x00000000000005fc                _global_impure_ptr
+ .sdata._impure_ptr
+                0x0000000000000600        0x4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                0x0000000000000600                _impure_ptr
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000000604                . = ALIGN (0x4)
+                0x0000000000000604                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata = ABSOLUTE (.))
+                0x0000000000000604                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x0000000001000ff4                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+
+.bss            0x0000000000000604      0x120 load address 0x00000000010015ec
+                0x0000000000000604                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000000604        0xc C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+                0x0000000000000604                alt_argc
+                0x0000000000000608                alt_argv
+                0x000000000000060c                alt_envp
+ .sbss          0x0000000000000610        0x4 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000000610                alt_irq_active
+ .sbss          0x0000000000000614        0x8 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+                0x0000000000000614                _alt_tick_rate
+                0x0000000000000618                _alt_nticks
+ .sbss          0x000000000000061c        0x4 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000000000000061c                alt_instruction_exception_handler
+ .sbss          0x0000000000000620        0x4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+                0x0000000000000620                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+ .bss           0x0000000000000624        0x0 obj/default/hello_world.o
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x0000000000000624        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .bss           0x0000000000000624        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .bss           0x0000000000000624        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .bss           0x0000000000000624        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .bss           0x0000000000000624        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .bss           0x0000000000000624        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000624        0x0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+ *(COMMON)
+ COMMON         0x0000000000000624      0x100 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000000624                alt_irq
+                0x0000000000000724                . = ALIGN (0x4)
+                0x0000000000000724                __bss_end = ABSOLUTE (.)
+
+.new_sdram_controller_0
+                0x0000000000000724        0x0 load address 0x00000000010015ec
+                [!provide]                        PROVIDE (_alt_partition_new_sdram_controller_0_start = ABSOLUTE (.))
+ *(.new_sdram_controller_0 .new_sdram_controller_0. new_sdram_controller_0.*)
+                0x0000000000000724                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_new_sdram_controller_0_end = ABSOLUTE (.))
+                0x0000000000000724                _end = ABSOLUTE (.)
+                0x0000000000000724                end = ABSOLUTE (.)
+                0x0000000000000724                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_new_sdram_controller_0_load_addr = LOADADDR (.new_sdram_controller_0))
+
+.onchip_memory2_0
+                0x00000000010015ec        0x0
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_start = ABSOLUTE (.))
+ *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
+                0x00000000010015ec                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_load_addr = LOADADDR (.onchip_memory2_0))
+
+.onchip_memory2_1
+                0x0000000001001000        0x0 load address 0x00000000010015ec
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_1_start = ABSOLUTE (.))
+ *(.onchip_memory2_1 .onchip_memory2_1. onchip_memory2_1.*)
+                0x0000000001001000                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_1_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_1_load_addr = LOADADDR (.onchip_memory2_1))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2c
+ *(.comment)
+ .comment       0x0000000000000000       0x2c obj/default/hello_world.o
+                                         0x2d (size before relaxing)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x3d8
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x20 obj/default/hello_world.o
+ .debug_aranges
+                0x0000000000000048       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x0000000000000068       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000088       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000000000000a8       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_aranges
+                0x00000000000000c8       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000000000000e8       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x0000000000000108       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x0000000000000128       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+ .debug_aranges
+                0x0000000000000148       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+ .debug_aranges
+                0x0000000000000168       0x18 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x0000000000000180       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000000000001a0       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x00000000000001c0       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x00000000000001e0       0x30 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x0000000000000210       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x0000000000000230       0x18 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x0000000000000248       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x0000000000000268       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x0000000000000288       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x00000000000002a8       0x38 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x00000000000002e0       0x28 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x0000000000000308       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x0000000000000328       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x0000000000000348       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000360       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x0000000000000378       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x0000000000000398       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x00000000000003b8       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0xed8d
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x22 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000022      0x968 obj/default/hello_world.o
+ .debug_info    0x000000000000098a      0x9f5 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+ .debug_info    0x000000000000137f      0xe76 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000000000021f5      0x9cb C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000002bc0      0xb0b C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_info    0x00000000000036cb      0xc60 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+ .debug_info    0x000000000000432b      0x934 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x0000000000004c5f      0xe95 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x0000000000005af4       0x88 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x0000000000005b7c       0x88 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+ .debug_info    0x0000000000005c04      0x972 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000000000006576      0x934 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000000000006eaa      0xbf3 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x0000000000007a9d      0xab7 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x0000000000008554       0x22 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x0000000000008576      0xa3c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000008fb2       0x8b C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x000000000000903d      0x2e9 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x0000000000009326      0xb84 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x0000000000009eaa      0x955 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x000000000000a7ff       0x22 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x000000000000a821      0x1f1 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x000000000000aa12      0x9a1 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_info    0x000000000000b3b3      0x9dc c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_info    0x000000000000bd8f      0x936 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_info    0x000000000000c6c5      0x92c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_info    0x000000000000cff1      0x9db c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_info    0x000000000000d9cc      0xa17 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x000000000000e3e3      0x9aa C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x0000000000000000     0x3436
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x1f8 obj/default/hello_world.o
+ .debug_abbrev  0x000000000000020a      0x21c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000000000000426      0x21e C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000000644      0x239 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000000000000087d      0x2ca C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_abbrev  0x0000000000000b47      0x23f C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x0000000000000d86      0x1e0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000000000000f66      0x212 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000000000001178       0x81 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x00000000000011f9       0x81 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+ .debug_abbrev  0x000000000000127a      0x1df C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000000000001459      0x1e0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000000000001639      0x2e8 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x0000000000001921      0x2a7 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x0000000000001bc8       0x12 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x0000000000001bda      0x26b C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000001e45       0x44 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x0000000000001e89       0xea C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x0000000000001f73      0x2b5 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x0000000000002228      0x1e5 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x000000000000240d       0x12 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x000000000000241f       0xea C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x0000000000002509      0x243 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x000000000000274c      0x230 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_abbrev  0x000000000000297c      0x1c9 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000002b45      0x1d5 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x0000000000002d1a      0x263 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x0000000000002f7d      0x26c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x00000000000031e9      0x24d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x0000000000000000     0x2e03
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x66 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000066      0x158 obj/default/hello_world.o
+ .debug_line    0x00000000000001be      0x1d2 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000000390      0x2b4 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000000644      0x198 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00000000000007dc      0x213 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x00000000000009ef      0x23e C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+ .debug_line    0x0000000000000c2d      0x17f C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000000dac      0x285 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x0000000000001031       0x66 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x0000000000001097       0x66 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+ .debug_line    0x00000000000010fd      0x131 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x000000000000122e      0x17d C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00000000000013ab      0x203 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x00000000000015ae      0x1dc C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x000000000000178a       0x6b C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x00000000000017f5      0x1b4 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000000000019a9       0x50 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000000000019f9       0xb6 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x0000000000001aaf      0x240 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000000000001cef      0x137 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x0000000000001e26       0xb3 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000001ed9       0xd3 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x0000000000001fac      0x201 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_line    0x00000000000021ad      0x229 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_line    0x00000000000023d6      0x166 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_line    0x000000000000253c      0x1d8 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_line    0x0000000000002714      0x289 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_line    0x000000000000299d      0x301 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x0000000000002c9e      0x165 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x0000000000000000      0x604
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x34 obj/default/hello_world.o
+ .debug_frame   0x0000000000000034       0x5c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000090       0x2c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000000000000bc       0x60 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000000000000011c       0x60 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_frame   0x000000000000017c       0x60 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x00000000000001dc       0x34 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000000000000210       0x34 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000000000000244       0x38 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+ .debug_frame   0x000000000000027c       0x38 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+ .debug_frame   0x00000000000002b4       0x34 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000000000002e8       0xa4 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x000000000000038c       0x38 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x00000000000003c4       0x38 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000000000003fc       0x34 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x0000000000000430       0x5c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x000000000000048c       0x34 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x00000000000004c0       0x5c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x000000000000051c       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_frame   0x000000000000053c       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000564       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000000584       0x54 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000000000005d8       0x2c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x0000000000000000     0x15bc
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x57 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+ .debug_str     0x0000000000000057      0x488 obj/default/hello_world.o
+                                        0x51f (size before relaxing)
+ .debug_str     0x00000000000004df       0xfb C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_load.o)
+                                        0x5fa (size before relaxing)
+ .debug_str     0x00000000000005da      0x241 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_main.o)
+                                        0x7be (size before relaxing)
+ .debug_str     0x000000000000081b       0x8e C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_sys_init.o)
+                                        0x5b1 (size before relaxing)
+ .debug_str     0x00000000000008a9       0xe0 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_avalon_timer_sc.o)
+                                        0x67a (size before relaxing)
+ .debug_str     0x0000000000000989       0x38 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_close.o)
+                                        0x64b (size before relaxing)
+ .debug_str     0x00000000000009c1       0x34 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x53d (size before relaxing)
+ .debug_str     0x00000000000009f5       0x32 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_dev.o)
+                                        0x79b (size before relaxing)
+ .debug_str     0x0000000000000a27       0x48 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_ctors.o)
+                                         0xd8 (size before relaxing)
+ .debug_str     0x0000000000000a6f       0x4c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_do_dtors.o)
+                                         0xd7 (size before relaxing)
+ .debug_str     0x0000000000000abb       0x14 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_errno.o)
+                                        0x53a (size before relaxing)
+ .debug_str     0x0000000000000acf       0x34 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x53d (size before relaxing)
+ .debug_str     0x0000000000000b03       0xb2 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic.o)
+                                        0x621 (size before relaxing)
+ .debug_str     0x0000000000000bb5       0x4c C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+                                        0x5dd (size before relaxing)
+ .debug_str     0x0000000000000c01       0x18 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+                                         0x60 (size before relaxing)
+ .debug_str     0x0000000000000c19       0x3a C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+                                        0x58c (size before relaxing)
+ .debug_str     0x0000000000000c53       0x29 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_vars.o)
+                                        0x142 (size before relaxing)
+ .debug_str     0x0000000000000c7c       0x28 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_release_fd.o)
+                                        0x1f9 (size before relaxing)
+ .debug_str     0x0000000000000ca4       0x6e C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_tick.o)
+                                        0x647 (size before relaxing)
+ .debug_str     0x0000000000000d12       0x3b C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x551 (size before relaxing)
+ .debug_str     0x0000000000000d4d       0x1e C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+                                         0x66 (size before relaxing)
+ .debug_str     0x0000000000000d6b      0x48b C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                        0x5a8 (size before relaxing)
+ .debug_str     0x00000000000011f6      0x17b c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                                        0x600 (size before relaxing)
+ .debug_str     0x0000000000001371       0x54 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+                                        0x601 (size before relaxing)
+ .debug_str     0x00000000000013c5       0xd9 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                                        0x5b5 (size before relaxing)
+ .debug_str     0x000000000000149e       0x41 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+                                        0x5bc (size before relaxing)
+ .debug_str     0x00000000000014df       0x5f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+                                        0x61e (size before relaxing)
+ .debug_str     0x000000000000153e       0x54 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                                        0x5fe (size before relaxing)
+ .debug_str     0x0000000000001592       0x2a C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exit.o)
+                                        0x546 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x315
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x32 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_loc     0x0000000000000032       0x22 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_loc     0x0000000000000054       0xf7 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_loc     0x000000000000014b      0x1ca c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+                0x0000000001000000                __alt_data_end = 0x1000000
+                0x0000000001000000                PROVIDE (__alt_stack_pointer = __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit = __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start = end)
+                [!provide]                        PROVIDE (__alt_heap_limit = 0x1000000)
+OUTPUT(test.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000      0x100
+ .debug_ranges  0x0000000000000000       0x20 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp/obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x28 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x0000000000000048       0x10 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x0000000000000058       0x30 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x0000000000000088       0x18 C:/Users/User/Desktop/testprojectQ20.1/software/test_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_ranges  0x00000000000000a0       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_ranges  0x00000000000000b0       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_ranges  0x00000000000000c0       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_ranges  0x00000000000000d0       0x30 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
