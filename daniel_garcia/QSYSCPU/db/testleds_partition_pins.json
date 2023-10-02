@@ -196,11 +196,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "up_down[1]",
+					"name" : "set_value",
+					"strict" : false
+				},
+				{
+					"name" : "auto_manual",
 					"strict" : false
 				},
 				{
 					"name" : "left_right[1]",
+					"strict" : false
+				},
+				{
+					"name" : "up_down[1]",
 					"strict" : false
 				},
 				{
