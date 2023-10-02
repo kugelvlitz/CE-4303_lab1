@@ -1,5 +1,5 @@
 Flow report for p1soqsysQ201
-Fri Sep 29 15:18:33 2023
+Sun Oct 01 15:42:30 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Sep 29 15:18:33 2023       ;
+; Flow Status                     ; Successful - Sun Oct 01 15:42:30 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; p1soqsysQ201                                ;
 ; Top-level Entity Name           ; qsysTOP                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 743 / 32,070 ( 2 % )                        ;
-; Total registers                 ; 1122                                        ;
-; Total pins                      ; 2 / 457 ( < 1 % )                           ;
+; Logic utilization (in ALMs)     ; 826 / 32,070 ( 3 % )                        ;
+; Total registers                 ; 1261                                        ;
+; Total pins                      ; 52 / 457 ( 11 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 75,776 / 4,065,280 ( 2 % )                  ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
@@ -68,43 +68,36 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/29/2023 15:16:11 ;
+; Start date & time ; 10/01/2023 15:39:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; p1soqsysQ201        ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                               ;
-+-------------------------------------+--------------------------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                     ; Value                                                  ; Default Value ; Entity Name ; Section Id                        ;
-+-------------------------------------+--------------------------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 251413958359779.169602217004920                        ; --            ; --          ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                            ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                              ; <None>        ; --          ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                                   ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                     ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                      ; --            ; --          ; --                                ;
-; MISC_FILE                           ; qsys/synthesis/../qsys.cmp                             ; --            ; --          ; --                                ;
-; MISC_FILE                           ; qsys/synthesis/../../qsys.qsys                         ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                 ; --            ; qsysTOP     ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                 ; --            ; qsysTOP     ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                 ; --            ; qsysTOP     ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                    ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                  ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                           ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; software/test/mem_init/                                ; --            ; --          ; --                                ;
-; SLD_FILE                            ; qsys/synthesis/qsys.regmap                             ; --            ; --          ; --                                ;
-; SLD_FILE                            ; qsys/synthesis/qsys.debuginfo                          ; --            ; --          ; --                                ;
-; SLD_INFO                            ; QSYS_NAME qsys HAS_SOPCINFO 1 GENERATION_ID 1696020104 ; --            ; qsys        ; --                                ;
-; SOPCINFO_FILE                       ; qsys/synthesis/../../qsys.sopcinfo                     ; --            ; --          ; --                                ;
-; SYNTHESIS_ONLY_QIP                  ; On                                                     ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; qsysTOP                                                ; p1soqsysQ201  ; --          ; --                                ;
-+-------------------------------------+--------------------------------------------------------+---------------+-------------+-----------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                               ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 91765768163.169619639204580            ; --            ; --          ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; qsysTOP     ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; qsysTOP     ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; qsysTOP     ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; software/qsyslogic/mem_init/           ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; qsysTOP                                ; p1soqsysQ201  ; --          ; --                                ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -112,12 +105,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:00     ; 1.0                     ; 4974 MB             ; 00:00:50                           ;
-; Fitter               ; 00:00:57     ; 1.1                     ; 6658 MB             ; 00:01:15                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4858 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.7                     ; 5204 MB             ; 00:00:07                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
-; Total                ; 00:02:16     ; --                      ; --                  ; 00:02:16                           ;
+; Analysis & Synthesis ; 00:00:55     ; 1.0                     ; 5028 MB             ; 00:01:35                           ;
+; Fitter               ; 00:01:19     ; 1.1                     ; 6783 MB             ; 00:04:08                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4863 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.8                     ; 5232 MB             ; 00:00:12                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4750 MB             ; 00:00:02                           ;
+; Total                ; 00:02:31     ; --                      ; --                  ; 00:06:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -126,11 +119,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Lenovo           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Lenovo           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Lenovo           ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; Lenovo           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Lenovo           ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-8VFFK58  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-8VFFK58  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-8VFFK58  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-8VFFK58  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-8VFFK58  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
