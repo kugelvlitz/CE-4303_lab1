@@ -61,7 +61,7 @@
    {
       datum baseAddress
       {
-         value = "67129488";
+         value = "67129520";
          type = "String";
       }
    }
@@ -77,7 +77,7 @@
    {
       datum baseAddress
       {
-         value = "67129456";
+         value = "67129488";
          type = "String";
       }
    }
@@ -93,7 +93,7 @@
    {
       datum baseAddress
       {
-         value = "67129440";
+         value = "67129472";
          type = "String";
       }
    }
@@ -109,7 +109,7 @@
    {
       datum baseAddress
       {
-         value = "67129424";
+         value = "67129456";
          type = "String";
       }
    }
@@ -125,7 +125,7 @@
    {
       datum baseAddress
       {
-         value = "67129408";
+         value = "67129440";
          type = "String";
       }
    }
@@ -141,7 +141,7 @@
    {
       datum baseAddress
       {
-         value = "67129392";
+         value = "67129424";
          type = "String";
       }
    }
@@ -157,7 +157,7 @@
    {
       datum baseAddress
       {
-         value = "67129376";
+         value = "67129408";
          type = "String";
       }
    }
@@ -173,7 +173,39 @@
    {
       datum baseAddress
       {
-         value = "67129472";
+         value = "67129504";
+         type = "String";
+      }
+   }
+   element pio_left_right_0
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element pio_left_right_0.s1
+   {
+      datum baseAddress
+      {
+         value = "67129392";
+         type = "String";
+      }
+   }
+   element pio_up_down_0
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element pio_up_down_0.s1
+   {
+      datum baseAddress
+      {
+         value = "67129376";
          type = "String";
       }
    }
@@ -292,6 +324,16 @@
    internal="pio_leds_0.external_connection"
    type="conduit"
    dir="end" />
+ <interface
+   name="pio_left_right_0_external_connection"
+   internal="pio_left_right_0.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pio_up_down_0_external_connection"
+   internal="pio_up_down_0.external_connection"
+   type="conduit"
+   dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <module name="clk_0" kind="clock_source" version="20.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
@@ -352,7 +394,7 @@
   <parameter name="dataAddrWidth" value="27" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='new_sdram_controller_0.s1' start='0x0' end='0x4000000' type='altera_avalon_new_sdram_controller.s1' /><slave name='ram_0.s1' start='0x4002000' end='0x4004000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x4004800' end='0x4005000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='timer_0.s1' start='0x4005000' end='0x4005020' type='altera_avalon_timer.s1' /><slave name='pio_display6_0.s1' start='0x4005020' end='0x4005030' type='altera_avalon_pio.s1' /><slave name='pio_display5_0.s1' start='0x4005030' end='0x4005040' type='altera_avalon_pio.s1' /><slave name='pio_display4_0.s1' start='0x4005040' end='0x4005050' type='altera_avalon_pio.s1' /><slave name='pio_display3_0.s1' start='0x4005050' end='0x4005060' type='altera_avalon_pio.s1' /><slave name='pio_display2_0.s1' start='0x4005060' end='0x4005070' type='altera_avalon_pio.s1' /><slave name='pio_display1_0.s1' start='0x4005070' end='0x4005080' type='altera_avalon_pio.s1' /><slave name='pio_leds_0.s1' start='0x4005080' end='0x4005090' type='altera_avalon_pio.s1' /><slave name='pio_continue_0.s1' start='0x4005090' end='0x40050A0' type='altera_avalon_pio.s1' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='new_sdram_controller_0.s1' start='0x0' end='0x4000000' type='altera_avalon_new_sdram_controller.s1' /><slave name='ram_0.s1' start='0x4002000' end='0x4004000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x4004800' end='0x4005000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='timer_0.s1' start='0x4005000' end='0x4005020' type='altera_avalon_timer.s1' /><slave name='pio_up_down_0.s1' start='0x4005020' end='0x4005030' type='altera_avalon_pio.s1' /><slave name='pio_left_right_0.s1' start='0x4005030' end='0x4005040' type='altera_avalon_pio.s1' /><slave name='pio_display6_0.s1' start='0x4005040' end='0x4005050' type='altera_avalon_pio.s1' /><slave name='pio_display5_0.s1' start='0x4005050' end='0x4005060' type='altera_avalon_pio.s1' /><slave name='pio_display4_0.s1' start='0x4005060' end='0x4005070' type='altera_avalon_pio.s1' /><slave name='pio_display3_0.s1' start='0x4005070' end='0x4005080' type='altera_avalon_pio.s1' /><slave name='pio_display2_0.s1' start='0x4005080' end='0x4005090' type='altera_avalon_pio.s1' /><slave name='pio_display1_0.s1' start='0x4005090' end='0x40050A0' type='altera_avalon_pio.s1' /><slave name='pio_leds_0.s1' start='0x40050A0' end='0x40050B0' type='altera_avalon_pio.s1' /><slave name='pio_continue_0.s1' start='0x40050B0' end='0x40050C0' type='altera_avalon_pio.s1' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -651,6 +693,42 @@
   <parameter name="width" value="8" />
  </module>
  <module
+   name="pio_left_right_0"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="2" />
+ </module>
+ <module
+   name="pio_up_down_0"
+   kind="altera_avalon_pio"
+   version="20.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="2" />
+ </module>
+ <module
    name="ram_0"
    kind="altera_avalon_onchip_memory2"
    version="20.1"
@@ -759,7 +837,7 @@
    start="nios2_gen2_0.data_master"
    end="pio_continue_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04005090" />
+  <parameter name="baseAddress" value="0x040050b0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -768,7 +846,7 @@
    start="nios2_gen2_0.data_master"
    end="pio_leds_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04005080" />
+  <parameter name="baseAddress" value="0x040050a0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -786,7 +864,7 @@
    start="nios2_gen2_0.data_master"
    end="pio_display1_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04005070" />
+  <parameter name="baseAddress" value="0x04005090" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -795,7 +873,7 @@
    start="nios2_gen2_0.data_master"
    end="pio_display2_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04005060" />
+  <parameter name="baseAddress" value="0x04005080" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -804,7 +882,7 @@
    start="nios2_gen2_0.data_master"
    end="pio_display3_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04005050" />
+  <parameter name="baseAddress" value="0x04005070" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -813,7 +891,7 @@
    start="nios2_gen2_0.data_master"
    end="pio_display4_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04005040" />
+  <parameter name="baseAddress" value="0x04005060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -822,7 +900,7 @@
    start="nios2_gen2_0.data_master"
    end="pio_display5_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04005030" />
+  <parameter name="baseAddress" value="0x04005050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -830,6 +908,24 @@
    version="20.1"
    start="nios2_gen2_0.data_master"
    end="pio_display6_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04005040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="pio_left_right_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04005030" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="nios2_gen2_0.data_master"
+   end="pio_up_down_0.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04005020" />
   <parameter name="defaultConnection" value="false" />
@@ -895,6 +991,12 @@
    version="20.1"
    start="clk_0.clk"
    end="pio_display6_0.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="clk_0.clk"
+   end="pio_left_right_0.clk" />
+ <connection kind="clock" version="20.1" start="clk_0.clk" end="pio_up_down_0.clk" />
  <connection kind="clock" version="20.1" start="clk_0.clk" end="ram_0.clk1" />
  <connection kind="clock" version="20.1" start="clk_0.clk" end="rom_0.clk1" />
  <connection
@@ -959,6 +1061,16 @@
    version="20.1"
    start="clk_0.clk_reset"
    end="pio_display6_0.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="pio_left_right_0.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="pio_up_down_0.reset" />
  <connection
    kind="reset"
    version="20.1"

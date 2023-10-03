@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Mon Oct 02 21:29:07 2023
+Analysis & Synthesis Status : Successful - Mon Oct 02 22:07:08 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : CPUQSYS
 Top-level Entity Name : cpuqsystop
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1254
-Total pins : 110
+Total registers : 1272
+Total pins : 114
 Total virtual pins : 0
 Total block memory bits : 141,312
 Total DSP Blocks : 0

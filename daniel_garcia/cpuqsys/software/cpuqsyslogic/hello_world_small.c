@@ -13,6 +13,14 @@ static unsigned int display4 = 0;
 static unsigned int display5 = 0;
 static unsigned int display6 = 0;
 
+static unsigned int temp_display = 16;
+static unsigned btnleftright = 3;
+static unsigned lastbtnleftright = 3;
+static unsigned int display_selector = 0;
+
+static unsigned btnupdown = 3;
+static unsigned lastbtnupdown = 3;
+
 // Mapeo para los displays
 static void displaymap(){
 
@@ -126,42 +134,133 @@ static void displaymap(){
 
 }
 
-static void verify_leds(){
-
-	if(display1 == 16){
-		display1 = 0;
-	}
-
-	if(display2 == 16){
-		display2 = 0;
-	}
-
-	if(display3 == 16){
-		display3 = 0;
-	}
-
-	if(display4 == 16){
-		display4 = 0;
-	}
-
-	if(display5 == 16){
-		display5 = 0;
-	}
-
-	if(display6 == 16){
-		display6 = 0;
+void static add_display_in_position(){
+	if((display_selector == 0) && (display1 <= 14)){
+		display1++;
+	}else if((display_selector == 1) && (display2 <= 14)){
+		display2++;
+	}else if((display_selector == 2) && (display3 <= 14)){
+		display3++;
+	}else if((display_selector == 3) && (display4 <= 14)){
+		display4++;
+	}else if((display_selector == 4) && (display5 <= 14)){
+		display5++;
+	}else if((display_selector == 5) && (display6 <= 14)){
+		display6++;
 	}
 }
 
-void static plus_leds(){
-	display1++;
-	display2 = display1+1;
-	display3 = display2+1;
-	display4 = display3+1;
-	display5 = display4+1;
-	display6 = display5+1;
+void static sub_display_in_position(){
+	if((display_selector == 0) && (display1 >= 1)){
+		display1--;
+	}else if((display_selector == 1) && (display2 >= 1)){
+		display2--;
+	}else if((display_selector == 2) && (display3 >= 1)){
+		display3--;
+	}else if((display_selector == 3) && (display4 >= 1)){
+		display4--;
+	}else if((display_selector == 4) && (display5 >= 1)){
+		display5--;
+	}else if((display_selector == 5) && (display6 >= 1)){
+		display6--;
+	}
+}
+
+
+void static handleleftrightbtn(){
+
+	btnleftright = IORD_ALTERA_AVALON_PIO_DATA(PIO_LEFT_RIGHT_0_BASE);
+	if((btnleftright != lastbtnleftright) && ((btnleftright == 2)|| (btnleftright == 1))){
+
+		lastbtnleftright = btnleftright;
+
+		if((btnleftright == 1) && (display_selector >= 1)){
+
+			display_selector--;
+
+		}else if((btnleftright == 2) && (display_selector <= 4)){
+
+			display_selector++;
+
+		}
+
+	}if(btnleftright == 3){
+		lastbtnleftright = 3;
+	}
+}
+
+void static handleupdownbnt(){
+	btnupdown = IORD_ALTERA_AVALON_PIO_DATA(PIO_UP_DOWN_0_BASE);
+	if((btnupdown != lastbtnupdown) && ((btnupdown == 2)|| (btnupdown == 1))){
+
+		lastbtnupdown = btnupdown;
+
+		if(btnupdown == 1){
+			sub_display_in_position();
+		}else if(btnupdown == 2){
+			add_display_in_position();
+		}
+	}if(btnupdown == 3){
+		lastbtnupdown = 3;
+	}
+}
+
+void static show_current_display(){
+
+	if(display_selector == 0){
+		if(temp_display == 16){
+			temp_display = display1;
+			display1 = 16;
+		}else{
+			display1 = temp_display;
+			temp_display = 16;
+		}
+	}else if(display_selector == 1){
+		if(temp_display == 16){
+			temp_display = display2;
+			display2 = 16;
+		}else{
+			display2 = temp_display;
+			temp_display = 16;
+		}
+	}else if(display_selector == 2){
+		if(temp_display == 16){
+			temp_display = display3;
+			display3 = 16;
+		}else{
+			display3 = temp_display;
+			temp_display = 16;
+		}
+	}else if(display_selector == 3){
+		if(temp_display == 16){
+			temp_display = display4;
+			display4 = 16;
+		}else{
+			display4 = temp_display;
+			temp_display = 16;
+		}
+	}else if(display_selector == 4){
+		if(temp_display == 16){
+			temp_display = display5;
+			display5 = 16;
+		}else{
+			display5 = temp_display;
+			temp_display = 16;
+		}
+	}else if(display_selector == 5){
+		if(temp_display == 16){
+			temp_display = display6;
+			display6 = 16;
+		}else{
+			display6 = temp_display;
+			temp_display = 16;
+		}
+	}
 
 }
+
+
+
 
 static void timer_isr(void *context)
 {
@@ -172,8 +271,9 @@ static void timer_isr(void *context)
 	IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, leds);
 
 	displaymap();
-	plus_leds();
-	verify_leds();
+	handleleftrightbtn();
+	handleupdownbnt();
+	show_current_display();
 
 
 	// Limpiamos status.TO

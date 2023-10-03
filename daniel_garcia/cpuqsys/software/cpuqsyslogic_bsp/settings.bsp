@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Oct 2, 2023 9:15:23 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1696302923334</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Oct 2, 2023 9:57:27 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1696305447274</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\User\Desktop\P1SO\daniel_garcia\cpuqsys\software\cpuqsyslogic_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\User\Desktop\P1SO\daniel_garcia\cpuqsys\cpuqsys.sopcinfo</SopcDesignFile>
@@ -923,50 +923,62 @@
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_display6_0</slaveDescriptor>
+                <slaveDescriptor>pio_up_down_0</slaveDescriptor>
                 <addressRange>0x04005020 - 0x0400502F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_display5_0</slaveDescriptor>
+                <slaveDescriptor>pio_left_right_0</slaveDescriptor>
                 <addressRange>0x04005030 - 0x0400503F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_display4_0</slaveDescriptor>
+                <slaveDescriptor>pio_display6_0</slaveDescriptor>
                 <addressRange>0x04005040 - 0x0400504F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_display3_0</slaveDescriptor>
+                <slaveDescriptor>pio_display5_0</slaveDescriptor>
                 <addressRange>0x04005050 - 0x0400505F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_display2_0</slaveDescriptor>
+                <slaveDescriptor>pio_display4_0</slaveDescriptor>
                 <addressRange>0x04005060 - 0x0400506F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_display1_0</slaveDescriptor>
+                <slaveDescriptor>pio_display3_0</slaveDescriptor>
                 <addressRange>0x04005070 - 0x0400507F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_leds_0</slaveDescriptor>
+                <slaveDescriptor>pio_display2_0</slaveDescriptor>
                 <addressRange>0x04005080 - 0x0400508F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_continue_0</slaveDescriptor>
+                <slaveDescriptor>pio_display1_0</slaveDescriptor>
                 <addressRange>0x04005090 - 0x0400509F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio_leds_0</slaveDescriptor>
+                <addressRange>0x040050A0 - 0x040050AF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio_continue_0</slaveDescriptor>
+                <addressRange>0x040050B0 - 0x040050BF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
