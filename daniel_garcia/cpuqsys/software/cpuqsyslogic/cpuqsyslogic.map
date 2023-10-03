@@ -1,0 +1,559 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+                              obj/default/hello_world_small.o (alt_ic_isr_register)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_handler)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o (alt_load)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o (alt_main)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o) (alt_irq_init)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o) (alt_instruction_exception_entry)
+C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000000000 0x0000000000000020
+rom_0            0x0000000000000020 0x0000000000001fe0
+ram_0            0x0000000000002000 0x0000000000002000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+LOAD obj/default/hello_world_small.o
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a
+LOAD C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a
+                0x0000000000000000                __alt_mem_rom_0 = 0x0
+                0x0000000000002000                __alt_mem_ram_0 = 0x2000
+
+.entry          0x0000000000000000       0x20
+ *(.entry)
+ .entry         0x0000000000000000       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+                0x0000000000000000                __reset
+                0x000000000000000c                _exit
+
+.exceptions     0x0000000000000020      0x160
+                0x0000000000000020                PROVIDE (__ram_exceptions_start = ABSOLUTE (.))
+                0x0000000000000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x0000000000000020        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+                0x0000000000000020                alt_irq_entry
+ .exceptions.entry.label
+                0x0000000000000020        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+                0x0000000000000020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x0000000000000020       0x54 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x0000000000000074       0x10 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x0000000000000084        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x0000000000000088        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000000008c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000000008c        0x8 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x0000000000000094       0x14 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00000000000000a8        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00000000000000a8        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00000000000000a8       0x54 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x00000000000000fc       0x60 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+                0x00000000000000fc                alt_irq_handler
+ .exceptions    0x000000000000015c       0x24 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000000000000015c                alt_instruction_exception_entry
+                0x0000000000000180                PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
+                0x0000000000000020                PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
+
+.text           0x0000000000000180      0x308
+                [!provide]                        PROVIDE (stext = ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000180       0x3c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+                0x0000000000000180                _start
+ .text          0x00000000000001bc       0x24 obj/default/hello_world_small.o
+ .text.startup  0x00000000000001e0       0x30 obj/default/hello_world_small.o
+                0x00000000000001e0                main
+ .text          0x0000000000000210       0x8c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+                0x0000000000000210                alt_ic_isr_register
+                0x0000000000000214                alt_ic_irq_enable
+                0x000000000000024c                alt_ic_irq_disable
+                0x0000000000000284                alt_ic_irq_enabled
+ .text          0x000000000000029c       0x68 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+                0x000000000000029c                alt_iic_isr_register
+ .text          0x0000000000000304        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x0000000000000304        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x0000000000000304        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000000000304       0xb4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+                0x0000000000000304                alt_load
+ .text          0x00000000000003b8       0x2c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+                0x00000000000003b8                alt_main
+ .text          0x00000000000003e4       0x24 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+                0x00000000000003e4                alt_irq_init
+                0x0000000000000404                alt_sys_init
+ .text          0x0000000000000408        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000000000408                alt_dcache_flush_all
+ .text          0x000000000000040c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x000000000000040c        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000000000000040c                alt_icache_flush_all
+ .text          0x0000000000000410       0x70 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000000410                alt_exception_cause_generated_bad_addr
+ .text          0x0000000000000480        0x8 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000000480                altera_nios2_gen2_irq_init
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext = ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0000000000000488                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start = ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start = ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__ = ABSOLUTE (.))
+ *(.ctors)
+ *(SORT_BY_NAME(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__ = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__ = ABSOLUTE (.))
+ *(.dtors)
+ *(SORT_BY_NAME(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
+ *(.jcr)
+                0x0000000000000488                . = ALIGN (0x4)
+
+.rodata         0x0000000000002000        0x0 load address 0x0000000000000488
+                0x0000000000002000                PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x0000000000002000                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ *(.rodata1)
+                0x0000000000002000                . = ALIGN (0x4)
+                0x0000000000002000                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x0000000000000488                PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+
+.rwdata         0x0000000000002000        0x4 load address 0x0000000000000488
+                0x0000000000002000                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x0000000000002000                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .data          0x0000000000002000        0x0 obj/default/hello_world_small.o
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x0000000000002000        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x000000000000a000                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp = _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0000000000002000        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000002000                alt_priority_mask
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000002004                . = ALIGN (0x4)
+                0x0000000000002004                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata = ABSOLUTE (.))
+                0x0000000000002004                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x0000000000000488                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+
+.bss            0x0000000000002004      0x118 load address 0x000000000000048c
+                0x0000000000002004                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000002004        0x4 obj/default/hello_world_small.o
+ .sbss          0x0000000000002008        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000002008                alt_irq_active
+ .sbss          0x000000000000200c        0xc C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+                0x000000000000200c                alt_envp
+                0x0000000000002010                alt_argv
+                0x0000000000002014                alt_argc
+ .sbss          0x0000000000002018        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000002018                alt_instruction_exception_handler
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .bss           0x000000000000201c        0x0 obj/default/hello_world_small.o
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x000000000000201c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ *(COMMON)
+ COMMON         0x000000000000201c      0x100 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+                0x000000000000201c                alt_irq
+                0x000000000000211c                . = ALIGN (0x4)
+                0x000000000000211c                __bss_end = ABSOLUTE (.)
+
+.rom_0          0x000000000000048c        0x0
+                [!provide]                        PROVIDE (_alt_partition_rom_0_start = ABSOLUTE (.))
+ *(.rom_0 .rom_0. rom_0.*)
+                0x000000000000048c                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_rom_0_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_alt_partition_rom_0_load_addr = LOADADDR (.rom_0))
+
+.ram_0          0x000000000000211c        0x0 load address 0x000000000000048c
+                [!provide]                        PROVIDE (_alt_partition_ram_0_start = ABSOLUTE (.))
+ *(.ram_0 .ram_0. ram_0.*)
+                0x000000000000211c                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_ram_0_end = ABSOLUTE (.))
+                0x000000000000211c                _end = ABSOLUTE (.)
+                0x000000000000211c                end = ABSOLUTE (.)
+                0x000000000000211c                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_ram_0_load_addr = LOADADDR (.ram_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2c
+ *(.comment)
+ .comment       0x0000000000000000       0x2c obj/default/hello_world_small.o
+                                         0x2d (size before relaxing)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x218
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x28 obj/default/hello_world_small.o
+ .debug_aranges
+                0x0000000000000050       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x0000000000000070       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x0000000000000090       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000000000000e0       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x00000000000000f8       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x0000000000000118       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000138       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000158       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x0000000000000178       0x38 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x00000000000001b0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000000000001d0       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x00000000000001f8       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x6e56
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x22 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000022      0x9d5 obj/default/hello_world_small.o
+ .debug_info    0x00000000000009f7      0xca2 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x0000000000001699      0xb3a C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x00000000000021d3       0x22 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00000000000021f5      0xa61 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000002c56       0x8b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000000000002ce1      0xaed C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000000000037ce      0xeb0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000000000000467e      0x9ea C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000005068      0x934 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000000000000599c       0x22 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x00000000000059be      0x934 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000000000062f2      0x20f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x0000000000006501      0x955 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_abbrev   0x0000000000000000     0x194f
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x24d obj/default/hello_world_small.o
+ .debug_abbrev  0x000000000000025f      0x31f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x000000000000057e      0x303 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x0000000000000881       0x12 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x0000000000000893      0x283 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000000b16       0x44 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x0000000000000b5a      0x277 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000000000000dd1      0x252 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000001023      0x25f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000001282      0x1e0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000000000001462       0x12 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000000000001474      0x1e0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000000000001654      0x116 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x000000000000176a      0x1e5 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_line     0x0000000000000000     0x1714
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x66 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000066      0x23f obj/default/hello_world_small.o
+ .debug_line    0x00000000000002a5      0x27b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000000000000520      0x235 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x0000000000000755       0x6b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x00000000000007c0      0x203 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000000000009c3       0x50 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000000000000a13      0x25b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000000c6e      0x309 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000000f77      0x1c6 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x000000000000113d      0x17f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00000000000012bc       0xb3 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x000000000000136f      0x17d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00000000000014ec       0xee C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x00000000000015da      0x13a C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_frame    0x0000000000000000      0x21c
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x38 obj/default/hello_world_small.o
+ .debug_frame   0x0000000000000038       0x50 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x0000000000000088       0x38 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x00000000000000c0       0x34 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000000000000f4       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000124       0x2c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x0000000000000150       0x3c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000000000000018c       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000000000001ac       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000000000001cc       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x00000000000001fc       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_str      0x0000000000000000      0xfe2
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x69 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .debug_str     0x0000000000000069      0x4e5 obj/default/hello_world_small.o
+                                        0x56f (size before relaxing)
+ .debug_str     0x000000000000054e       0xf2 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+                                        0x648 (size before relaxing)
+ .debug_str     0x0000000000000640       0x37 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+                                        0x614 (size before relaxing)
+ .debug_str     0x0000000000000677       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+                                         0x72 (size before relaxing)
+ .debug_str     0x000000000000068f       0x3a C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+                                        0x59e (size before relaxing)
+ .debug_str     0x00000000000006c9       0x29 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+                                        0x154 (size before relaxing)
+ .debug_str     0x00000000000006f2      0x11d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+                                        0x636 (size before relaxing)
+ .debug_str     0x000000000000080f      0x23d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+                                        0x7e8 (size before relaxing)
+ .debug_str     0x0000000000000a4c       0x8f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+                                        0x5de (size before relaxing)
+ .debug_str     0x0000000000000adb       0x1f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x54f (size before relaxing)
+ .debug_str     0x0000000000000afa       0x1e C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+                                         0x78 (size before relaxing)
+ .debug_str     0x0000000000000b18       0x1f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x54f (size before relaxing)
+ .debug_str     0x0000000000000b37      0x48b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                        0x5ba (size before relaxing)
+ .debug_str     0x0000000000000fc2       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x563 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x5eb
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x205 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x0000000000000205      0x23c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x0000000000000441       0xac C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00000000000004ed       0x66 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x0000000000000553       0x25 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x0000000000000578       0x73 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+                0x0000000000004000                __alt_data_end = 0x4000
+                0x0000000000004000                PROVIDE (__alt_stack_pointer = __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit = __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start = end)
+                [!provide]                        PROVIDE (__alt_heap_limit = 0x4000)
+OUTPUT(cpuqsyslogic.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000      0x188
+ .debug_ranges  0x0000000000000000       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x18 obj/default/hello_world_small.o
+ .debug_ranges  0x0000000000000038       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_ranges  0x0000000000000050       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x0000000000000078       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x00000000000000a0       0xa0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x0000000000000140       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x0000000000000170       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
