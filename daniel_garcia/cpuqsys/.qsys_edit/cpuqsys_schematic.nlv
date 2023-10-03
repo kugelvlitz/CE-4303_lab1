@@ -3,7 +3,8 @@
 preplace inst cpuqsys.pio_leds_0 -pg 1 -lvl 3 -y 390
 preplace inst cpuqsys.pio_continue_0 -pg 1 -lvl 3 -y 190
 preplace inst cpuqsys.nios2_gen2_0 -pg 1 -lvl 2 -y 120
-preplace inst cpuqsys.pio_display4_0 -pg 1 -lvl 3 -y 1090
+preplace inst cpuqsys.pio_up_down_0 -pg 1 -lvl 3 -y 1190
+preplace inst cpuqsys.pio_display4_0 -pg 1 -lvl 3 -y 1290
 preplace inst cpuqsys.nios2_gen2_0.reset_bridge -pg 1
 preplace inst cpuqsys.timer_0 -pg 1 -lvl 3 -y 290
 preplace inst cpuqsys.pio_display3_0 -pg 1 -lvl 3 -y 790
@@ -12,26 +13,29 @@ preplace inst cpuqsys.pio_display6_0 -pg 1 -lvl 3 -y 990
 preplace inst cpuqsys.nios2_gen2_0.cpu -pg 1
 preplace inst cpuqsys.nios2_gen2_0.clock_bridge -pg 1
 preplace inst cpuqsys -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst cpuqsys.pio_left_right_0 -pg 1 -lvl 3 -y 1090
 preplace inst cpuqsys.clk_0 -pg 1 -lvl 1 -y 190
 preplace inst cpuqsys.pio_display5_0 -pg 1 -lvl 3 -y 890
 preplace inst cpuqsys.ram_0 -pg 1 -lvl 3 -y 30
 preplace inst cpuqsys.pio_display2_0 -pg 1 -lvl 3 -y 690
 preplace inst cpuqsys.pio_display1_0 -pg 1 -lvl 3 -y 590
 preplace inst cpuqsys.new_sdram_controller_0 -pg 1 -lvl 3 -y 490
-preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.pio_display3_0_external_connection,(SLAVE)pio_display3_0.external_connection) 1 0 3 NJ 820 NJ 820 NJ
-preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)pio_display6_0.external_connection,(SLAVE)cpuqsys.pio_display6_0_external_connection) 1 0 3 NJ 1020 NJ 1020 NJ
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.pio_display4_0_external_connection,(SLAVE)pio_display4_0.external_connection) 1 0 3 NJ 1320 NJ 1320 NJ
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)pio_display5_0.external_connection,(SLAVE)cpuqsys.pio_display5_0_external_connection) 1 0 3 NJ 920 NJ 920 NJ
 preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)new_sdram_controller_0.wire,(SLAVE)cpuqsys.new_sdram_controller_0_wire) 1 0 3 NJ 560 NJ 560 NJ
-preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)cpuqsys.reset) 1 0 1 NJ
-preplace netloc POINT_TO_POINT<net_container>cpuqsys</net_container>(MASTER)nios2_gen2_0.irq,(SLAVE)timer_0.irq) 1 2 1 850
-preplace netloc INTERCONNECT<net_container>cpuqsys</net_container>(SLAVE)pio_display3_0.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)pio_display1_0.s1,(SLAVE)pio_continue_0.s1,(SLAVE)pio_display6_0.s1,(MASTER)nios2_gen2_0.data_master,(SLAVE)pio_leds_0.s1,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)rom_0.s1,(SLAVE)timer_0.s1,(SLAVE)ram_0.s1,(SLAVE)pio_display5_0.s1,(SLAVE)new_sdram_controller_0.s1,(SLAVE)pio_display4_0.s1,(SLAVE)pio_display2_0.s1) 1 1 2 450 260 810
-preplace netloc FAN_OUT<net_container>cpuqsys</net_container>(SLAVE)nios2_gen2_0.clk,(SLAVE)timer_0.clk,(SLAVE)pio_display6_0.clk,(MASTER)clk_0.clk,(SLAVE)pio_leds_0.clk,(SLAVE)pio_display2_0.clk,(SLAVE)pio_display1_0.clk,(SLAVE)ram_0.clk1,(SLAVE)pio_display5_0.clk,(SLAVE)pio_continue_0.clk,(SLAVE)pio_display4_0.clk,(SLAVE)pio_display3_0.clk,(SLAVE)new_sdram_controller_0.clk,(SLAVE)rom_0.clk1) 1 1 2 410 300 870
-preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)pio_display1_0.external_connection,(SLAVE)cpuqsys.pio_display1_0_external_connection) 1 0 3 NJ 620 NJ 620 NJ
-preplace netloc FAN_OUT<net_container>cpuqsys</net_container>(SLAVE)ram_0.reset1,(MASTER)clk_0.clk_reset,(SLAVE)pio_display6_0.reset,(SLAVE)pio_leds_0.reset,(SLAVE)pio_continue_0.reset,(SLAVE)pio_display3_0.reset,(SLAVE)rom_0.reset1,(SLAVE)pio_display1_0.reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)new_sdram_controller_0.reset,(SLAVE)timer_0.reset,(SLAVE)pio_display5_0.reset,(SLAVE)pio_display2_0.reset,(SLAVE)pio_display4_0.reset) 1 1 2 430 320 830
-preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)pio_display4_0.external_connection,(SLAVE)cpuqsys.pio_display4_0_external_connection) 1 0 3 NJ 1120 NJ 1120 NJ
+preplace netloc INTERCONNECT<net_container>cpuqsys</net_container>(SLAVE)pio_display5_0.s1,(SLAVE)ram_0.s1,(SLAVE)pio_up_down_0.s1,(SLAVE)timer_0.s1,(SLAVE)pio_left_right_0.s1,(SLAVE)new_sdram_controller_0.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)pio_display3_0.s1,(SLAVE)pio_display6_0.s1,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)pio_display1_0.s1,(SLAVE)pio_display2_0.s1,(SLAVE)pio_leds_0.s1,(SLAVE)pio_continue_0.s1,(SLAVE)rom_0.s1,(SLAVE)pio_display4_0.s1,(MASTER)nios2_gen2_0.data_master) 1 1 2 450 1340 850
+preplace netloc POINT_TO_POINT<net_container>cpuqsys</net_container>(MASTER)nios2_gen2_0.irq,(SLAVE)timer_0.irq) 1 2 1 810
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.pio_display2_0_external_connection,(SLAVE)pio_display2_0.external_connection) 1 0 3 NJ 720 NJ 720 NJ
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)clk_0.clk_in,(SLAVE)cpuqsys.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.pio_display6_0_external_connection,(SLAVE)pio_display6_0.external_connection) 1 0 3 NJ 1020 NJ 1020 NJ
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)pio_left_right_0.external_connection,(SLAVE)cpuqsys.pio_left_right_0_external_connection) 1 0 3 NJ 1120 NJ 1120 NJ
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
 preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.pio_continue_0_external_connection,(SLAVE)pio_continue_0.external_connection) 1 0 3 NJ 280 NJ 280 NJ
-preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>cpuqsys</net_container>(SLAVE)pio_display1_0.reset,(MASTER)clk_0.clk_reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)rom_0.reset1,(SLAVE)pio_continue_0.reset,(SLAVE)pio_display4_0.reset,(SLAVE)pio_leds_0.reset,(SLAVE)ram_0.reset1,(SLAVE)pio_display3_0.reset,(SLAVE)new_sdram_controller_0.reset,(SLAVE)pio_display2_0.reset,(SLAVE)timer_0.reset,(SLAVE)pio_up_down_0.reset,(SLAVE)pio_display5_0.reset,(SLAVE)pio_left_right_0.reset,(SLAVE)pio_display6_0.reset) 1 1 2 430 60 870
 preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.pio_leds_0_external_connection,(SLAVE)pio_leds_0.external_connection) 1 0 3 NJ 420 NJ 420 NJ
-preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.pio_display5_0_external_connection,(SLAVE)pio_display5_0.external_connection) 1 0 3 NJ 920 NJ 920 NJ
-preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)pio_display2_0.external_connection,(SLAVE)cpuqsys.pio_display2_0_external_connection) 1 0 3 NJ 720 NJ 720 NJ
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.pio_display1_0_external_connection,(SLAVE)pio_display1_0.external_connection) 1 0 3 NJ 620 NJ 620 NJ
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)cpuqsys.pio_up_down_0_external_connection,(SLAVE)pio_up_down_0.external_connection) 1 0 3 NJ 1220 NJ 1220 NJ
+preplace netloc EXPORT<net_container>cpuqsys</net_container>(SLAVE)pio_display3_0.external_connection,(SLAVE)cpuqsys.pio_display3_0_external_connection) 1 0 3 NJ 820 NJ 820 NJ
+preplace netloc FAN_OUT<net_container>cpuqsys</net_container>(SLAVE)pio_up_down_0.clk,(SLAVE)pio_left_right_0.clk,(SLAVE)pio_display3_0.clk,(SLAVE)pio_display6_0.clk,(SLAVE)pio_display4_0.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)pio_display1_0.clk,(MASTER)clk_0.clk,(SLAVE)pio_continue_0.clk,(SLAVE)new_sdram_controller_0.clk,(SLAVE)rom_0.clk1,(SLAVE)pio_display2_0.clk,(SLAVE)pio_display5_0.clk,(SLAVE)timer_0.clk,(SLAVE)pio_leds_0.clk,(SLAVE)ram_0.clk1) 1 1 2 410 80 830
 levelinfo -pg 1 0 200 1120
 levelinfo -hier cpuqsys 210 240 570 960 1110

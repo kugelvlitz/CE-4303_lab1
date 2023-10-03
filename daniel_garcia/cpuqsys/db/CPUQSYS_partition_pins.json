@@ -300,6 +300,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "ready_rsa_filter[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ready_rsa_filter[1]",
+					"strict" : false
+				},
+				{
 					"name" : "new_sdram_controller_0_wire_dq[0]",
 					"strict" : false
 				},
@@ -441,6 +449,14 @@
 				},
 				{
 					"name" : "up_down[0]",
+					"strict" : false
+				},
+				{
+					"name" : "set_value",
+					"strict" : false
+				},
+				{
+					"name" : "auto_manual",
 					"strict" : false
 				},
 				{

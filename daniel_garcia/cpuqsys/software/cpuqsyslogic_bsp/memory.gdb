@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'cpuqsys'
 # SOPC Builder design path: C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/cpuqsys.sopcinfo
 #
-# Generated: Mon Oct 02 20:37:22 CST 2023
+# Generated: Tue Oct 03 03:32:48 CST 2023
 
 # DO NOT MODIFY THIS FILE
 #

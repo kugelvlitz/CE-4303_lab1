@@ -13,7 +13,13 @@ static unsigned int display4 = 0;
 static unsigned int display5 = 0;
 static unsigned int display6 = 0;
 
-static unsigned int temp_display = 16;
+static unsigned int totalkeys = 2;
+static unsigned int public_key = 0;
+static unsigned int private_key = 0;
+static unsigned int set_val = 0;
+static unsigned int last_set_val = 0;
+
+
 static unsigned btnleftright = 3;
 static unsigned lastbtnleftright = 3;
 static unsigned int display_selector = 0;
@@ -205,75 +211,63 @@ void static handleupdownbnt(){
 	}
 }
 
-void static show_current_display(){
 
-	if(display_selector == 0){
-		if(temp_display == 16){
-			temp_display = display1;
-			display1 = 16;
-		}else{
-			display1 = temp_display;
-			temp_display = 16;
-		}
-	}else if(display_selector == 1){
-		if(temp_display == 16){
-			temp_display = display2;
-			display2 = 16;
-		}else{
-			display2 = temp_display;
-			temp_display = 16;
-		}
-	}else if(display_selector == 2){
-		if(temp_display == 16){
-			temp_display = display3;
-			display3 = 16;
-		}else{
-			display3 = temp_display;
-			temp_display = 16;
-		}
-	}else if(display_selector == 3){
-		if(temp_display == 16){
-			temp_display = display4;
-			display4 = 16;
-		}else{
-			display4 = temp_display;
-			temp_display = 16;
-		}
-	}else if(display_selector == 4){
-		if(temp_display == 16){
-			temp_display = display5;
-			display5 = 16;
-		}else{
-			display5 = temp_display;
-			temp_display = 16;
-		}
-	}else if(display_selector == 5){
-		if(temp_display == 16){
-			temp_display = display6;
-			display6 = 16;
-		}else{
-			display6 = temp_display;
-			temp_display = 16;
-		}
+void static handlesetvalue(){
+
+	set_val = IORD_ALTERA_AVALON_PIO_DATA(PIO_SET_VALUE_0_BASE);
+
+	if((set_val != last_set_val) && (set_val == 1)){
+		last_set_val = set_val;
+		unsigned int decimal = display1 + display2*16 + display3*16*16 + display4*16*16*16;
+
+		if(totalkeys == 0){
+				totalkeys++;
+				public_key = decimal;
+				display1 = decimal%10;
+				display2 = decimal/10%10;
+				display3 = decimal/100%10;
+				display4 = decimal/1000%10;
+
+			}
+
+		else if(totalkeys == 1){
+				private_key = decimal;
+				display1 = decimal%10;
+				display2 = decimal/10%10;
+				display3 = decimal/100%10;
+				display4 = decimal/1000%10;
+				totalkeys++;
+			}
+	}if(set_val == 0){
+		last_set_val = 0;
 	}
 
 }
 
+void static show_current_selection(){
 
+	if(display_selector == 0) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 4);
+	if(display_selector == 1) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 8);
+	if(display_selector == 2) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 16);
+	if(display_selector == 3) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 32);
+	if(display_selector == 4) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 64);
+	if(display_selector == 5) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 128);
 
+}
 
 static void timer_isr(void *context)
 {
 	// No usamos esto
 	(void) context;
 
-	leds = leds << 1 | (IORD_ALTERA_AVALON_PIO_DATA(PIO_CONTINUE_0_BASE) & 1);
-	IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, leds);
+
 
 	displaymap();
 	handleleftrightbtn();
 	handleupdownbnt();
-	show_current_display();
+	handlesetvalue();
+	show_current_selection();
+	displaymap();
 
 
 	// Limpiamos status.TO

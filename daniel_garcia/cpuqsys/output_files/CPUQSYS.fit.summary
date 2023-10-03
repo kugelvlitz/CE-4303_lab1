@@ -1,13 +1,13 @@
-Fitter Status : Successful - Mon Oct 02 22:08:10 2023
+Fitter Status : Successful - Tue Oct 03 04:15:43 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : CPUQSYS
 Top-level Entity Name : cpuqsystop
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 868 / 32,070 ( 3 % )
-Total registers : 1413
-Total pins : 114 / 457 ( 25 % )
+Logic utilization (in ALMs) : 878 / 32,070 ( 3 % )
+Total registers : 1427
+Total pins : 118 / 457 ( 26 % )
 Total virtual pins : 0
 Total block memory bits : 141,312 / 4,065,280 ( 3 % )
 Total RAM Blocks : 18 / 397 ( 5 % )

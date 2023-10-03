@@ -4,27 +4,30 @@
 
 `timescale 1 ps / 1 ps
 module cpuqsys (
-		input  wire        clk_clk,                                     //                                  clk.clk
-		output wire [13:0] new_sdram_controller_0_wire_addr,            //          new_sdram_controller_0_wire.addr
-		output wire [1:0]  new_sdram_controller_0_wire_ba,              //                                     .ba
-		output wire        new_sdram_controller_0_wire_cas_n,           //                                     .cas_n
-		output wire        new_sdram_controller_0_wire_cke,             //                                     .cke
-		output wire        new_sdram_controller_0_wire_cs_n,            //                                     .cs_n
-		inout  wire [31:0] new_sdram_controller_0_wire_dq,              //                                     .dq
-		output wire [3:0]  new_sdram_controller_0_wire_dqm,             //                                     .dqm
-		output wire        new_sdram_controller_0_wire_ras_n,           //                                     .ras_n
-		output wire        new_sdram_controller_0_wire_we_n,            //                                     .we_n
-		input  wire        pio_continue_0_external_connection_export,   //   pio_continue_0_external_connection.export
-		output wire [6:0]  pio_display1_0_external_connection_export,   //   pio_display1_0_external_connection.export
-		output wire [6:0]  pio_display2_0_external_connection_export,   //   pio_display2_0_external_connection.export
-		output wire [6:0]  pio_display3_0_external_connection_export,   //   pio_display3_0_external_connection.export
-		output wire [6:0]  pio_display4_0_external_connection_export,   //   pio_display4_0_external_connection.export
-		output wire [6:0]  pio_display5_0_external_connection_export,   //   pio_display5_0_external_connection.export
-		output wire [6:0]  pio_display6_0_external_connection_export,   //   pio_display6_0_external_connection.export
-		output wire [7:0]  pio_leds_0_external_connection_export,       //       pio_leds_0_external_connection.export
-		input  wire [1:0]  pio_left_right_0_external_connection_export, // pio_left_right_0_external_connection.export
-		input  wire [1:0]  pio_up_down_0_external_connection_export,    //    pio_up_down_0_external_connection.export
-		input  wire        reset_reset_n                                //                                reset.reset_n
+		input  wire        clk_clk,                                           //                                        clk.clk
+		output wire [13:0] new_sdram_controller_0_wire_addr,                  //                new_sdram_controller_0_wire.addr
+		output wire [1:0]  new_sdram_controller_0_wire_ba,                    //                                           .ba
+		output wire        new_sdram_controller_0_wire_cas_n,                 //                                           .cas_n
+		output wire        new_sdram_controller_0_wire_cke,                   //                                           .cke
+		output wire        new_sdram_controller_0_wire_cs_n,                  //                                           .cs_n
+		inout  wire [31:0] new_sdram_controller_0_wire_dq,                    //                                           .dq
+		output wire [3:0]  new_sdram_controller_0_wire_dqm,                   //                                           .dqm
+		output wire        new_sdram_controller_0_wire_ras_n,                 //                                           .ras_n
+		output wire        new_sdram_controller_0_wire_we_n,                  //                                           .we_n
+		input  wire        pio_auto_manual_0_external_connection_export,      //      pio_auto_manual_0_external_connection.export
+		input  wire        pio_continue_0_external_connection_export,         //         pio_continue_0_external_connection.export
+		output wire [6:0]  pio_display1_0_external_connection_export,         //         pio_display1_0_external_connection.export
+		output wire [6:0]  pio_display2_0_external_connection_export,         //         pio_display2_0_external_connection.export
+		output wire [6:0]  pio_display3_0_external_connection_export,         //         pio_display3_0_external_connection.export
+		output wire [6:0]  pio_display4_0_external_connection_export,         //         pio_display4_0_external_connection.export
+		output wire [6:0]  pio_display5_0_external_connection_export,         //         pio_display5_0_external_connection.export
+		output wire [6:0]  pio_display6_0_external_connection_export,         //         pio_display6_0_external_connection.export
+		output wire [7:0]  pio_leds_0_external_connection_export,             //             pio_leds_0_external_connection.export
+		input  wire [1:0]  pio_left_right_0_external_connection_export,       //       pio_left_right_0_external_connection.export
+		output wire [1:0]  pio_ready_rsa_filter_0_external_connection_export, // pio_ready_rsa_filter_0_external_connection.export
+		input  wire        pio_set_value_0_external_connection_export,        //        pio_set_value_0_external_connection.export
+		input  wire [1:0]  pio_up_down_0_external_connection_export,          //          pio_up_down_0_external_connection.export
+		input  wire        reset_reset_n                                      //                                      reset.reset_n
 	);
 
 	wire  [31:0] nios2_gen2_0_data_master_readdata;                          // mm_interconnect_0:nios2_gen2_0_data_master_readdata -> nios2_gen2_0:d_readdata
@@ -109,6 +112,15 @@ module cpuqsys (
 	wire   [1:0] mm_interconnect_0_pio_left_right_0_s1_address;              // mm_interconnect_0:pio_left_right_0_s1_address -> pio_left_right_0:address
 	wire  [31:0] mm_interconnect_0_pio_up_down_0_s1_readdata;                // pio_up_down_0:readdata -> mm_interconnect_0:pio_up_down_0_s1_readdata
 	wire   [1:0] mm_interconnect_0_pio_up_down_0_s1_address;                 // mm_interconnect_0:pio_up_down_0_s1_address -> pio_up_down_0:address
+	wire  [31:0] mm_interconnect_0_pio_set_value_0_s1_readdata;              // pio_set_value_0:readdata -> mm_interconnect_0:pio_set_value_0_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_set_value_0_s1_address;               // mm_interconnect_0:pio_set_value_0_s1_address -> pio_set_value_0:address
+	wire  [31:0] mm_interconnect_0_pio_auto_manual_0_s1_readdata;            // pio_auto_manual_0:readdata -> mm_interconnect_0:pio_auto_manual_0_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_auto_manual_0_s1_address;             // mm_interconnect_0:pio_auto_manual_0_s1_address -> pio_auto_manual_0:address
+	wire         mm_interconnect_0_pio_ready_rsa_filter_0_s1_chipselect;     // mm_interconnect_0:pio_ready_rsa_filter_0_s1_chipselect -> pio_ready_rsa_filter_0:chipselect
+	wire  [31:0] mm_interconnect_0_pio_ready_rsa_filter_0_s1_readdata;       // pio_ready_rsa_filter_0:readdata -> mm_interconnect_0:pio_ready_rsa_filter_0_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_ready_rsa_filter_0_s1_address;        // mm_interconnect_0:pio_ready_rsa_filter_0_s1_address -> pio_ready_rsa_filter_0:address
+	wire         mm_interconnect_0_pio_ready_rsa_filter_0_s1_write;          // mm_interconnect_0:pio_ready_rsa_filter_0_s1_write -> pio_ready_rsa_filter_0:write_n
+	wire  [31:0] mm_interconnect_0_pio_ready_rsa_filter_0_s1_writedata;      // mm_interconnect_0:pio_ready_rsa_filter_0_s1_writedata -> pio_ready_rsa_filter_0:writedata
 	wire         mm_interconnect_0_rom_0_s1_chipselect;                      // mm_interconnect_0:rom_0_s1_chipselect -> rom_0:chipselect
 	wire  [31:0] mm_interconnect_0_rom_0_s1_readdata;                        // rom_0:readdata -> mm_interconnect_0:rom_0_s1_readdata
 	wire         mm_interconnect_0_rom_0_s1_debugaccess;                     // mm_interconnect_0:rom_0_s1_debugaccess -> rom_0:debugaccess
@@ -119,7 +131,7 @@ module cpuqsys (
 	wire         mm_interconnect_0_rom_0_s1_clken;                           // mm_interconnect_0:rom_0_s1_clken -> rom_0:clken
 	wire         irq_mapper_receiver0_irq;                                   // timer_0:irq -> irq_mapper:receiver0_irq
 	wire  [31:0] nios2_gen2_0_irq_irq;                                       // irq_mapper:sender_irq -> nios2_gen2_0:irq
-	wire         rst_controller_reset_out_reset;                             // rst_controller:reset_out -> [irq_mapper:reset, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, new_sdram_controller_0:reset_n, nios2_gen2_0:reset_n, pio_continue_0:reset_n, pio_display1_0:reset_n, pio_display2_0:reset_n, pio_display3_0:reset_n, pio_display4_0:reset_n, pio_display5_0:reset_n, pio_display6_0:reset_n, pio_leds_0:reset_n, pio_left_right_0:reset_n, pio_up_down_0:reset_n, ram_0:reset, rom_0:reset, rst_translator:in_reset, timer_0:reset_n]
+	wire         rst_controller_reset_out_reset;                             // rst_controller:reset_out -> [irq_mapper:reset, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, new_sdram_controller_0:reset_n, nios2_gen2_0:reset_n, pio_auto_manual_0:reset_n, pio_continue_0:reset_n, pio_display1_0:reset_n, pio_display2_0:reset_n, pio_display3_0:reset_n, pio_display4_0:reset_n, pio_display5_0:reset_n, pio_display6_0:reset_n, pio_leds_0:reset_n, pio_left_right_0:reset_n, pio_ready_rsa_filter_0:reset_n, pio_set_value_0:reset_n, pio_up_down_0:reset_n, ram_0:reset, rom_0:reset, rst_translator:in_reset, timer_0:reset_n]
 	wire         rst_controller_reset_out_reset_req;                         // rst_controller:reset_req -> [nios2_gen2_0:reset_req, ram_0:reset_req, rom_0:reset_req, rst_translator:reset_req_in]
 
 	cpuqsys_new_sdram_controller_0 new_sdram_controller_0 (
@@ -174,7 +186,15 @@ module cpuqsys (
 		.dummy_ci_port                       ()                                                            // custom_instruction_master.readra
 	);
 
-	cpuqsys_pio_continue_0 pio_continue_0 (
+	cpuqsys_pio_auto_manual_0 pio_auto_manual_0 (
+		.clk      (clk_clk),                                         //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),                 //               reset.reset_n
+		.address  (mm_interconnect_0_pio_auto_manual_0_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_pio_auto_manual_0_s1_readdata), //                    .readdata
+		.in_port  (pio_auto_manual_0_external_connection_export)     // external_connection.export
+	);
+
+	cpuqsys_pio_auto_manual_0 pio_continue_0 (
 		.clk      (clk_clk),                                      //                 clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),              //               reset.reset_n
 		.address  (mm_interconnect_0_pio_continue_0_s1_address),  //                  s1.address
@@ -267,6 +287,25 @@ module cpuqsys (
 		.in_port  (pio_left_right_0_external_connection_export)     // external_connection.export
 	);
 
+	cpuqsys_pio_ready_rsa_filter_0 pio_ready_rsa_filter_0 (
+		.clk        (clk_clk),                                                //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),                        //               reset.reset_n
+		.address    (mm_interconnect_0_pio_ready_rsa_filter_0_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_pio_ready_rsa_filter_0_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_pio_ready_rsa_filter_0_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_pio_ready_rsa_filter_0_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_pio_ready_rsa_filter_0_s1_readdata),   //                    .readdata
+		.out_port   (pio_ready_rsa_filter_0_external_connection_export)       // external_connection.export
+	);
+
+	cpuqsys_pio_auto_manual_0 pio_set_value_0 (
+		.clk      (clk_clk),                                       //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),               //               reset.reset_n
+		.address  (mm_interconnect_0_pio_set_value_0_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_pio_set_value_0_s1_readdata), //                    .readdata
+		.in_port  (pio_set_value_0_external_connection_export)     // external_connection.export
+	);
+
 	cpuqsys_pio_left_right_0 pio_up_down_0 (
 		.clk      (clk_clk),                                     //                 clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),             //               reset.reset_n
@@ -347,6 +386,8 @@ module cpuqsys (
 		.nios2_gen2_0_debug_mem_slave_byteenable        (mm_interconnect_0_nios2_gen2_0_debug_mem_slave_byteenable),  //                                         .byteenable
 		.nios2_gen2_0_debug_mem_slave_waitrequest       (mm_interconnect_0_nios2_gen2_0_debug_mem_slave_waitrequest), //                                         .waitrequest
 		.nios2_gen2_0_debug_mem_slave_debugaccess       (mm_interconnect_0_nios2_gen2_0_debug_mem_slave_debugaccess), //                                         .debugaccess
+		.pio_auto_manual_0_s1_address                   (mm_interconnect_0_pio_auto_manual_0_s1_address),             //                     pio_auto_manual_0_s1.address
+		.pio_auto_manual_0_s1_readdata                  (mm_interconnect_0_pio_auto_manual_0_s1_readdata),            //                                         .readdata
 		.pio_continue_0_s1_address                      (mm_interconnect_0_pio_continue_0_s1_address),                //                        pio_continue_0_s1.address
 		.pio_continue_0_s1_readdata                     (mm_interconnect_0_pio_continue_0_s1_readdata),               //                                         .readdata
 		.pio_display1_0_s1_address                      (mm_interconnect_0_pio_display1_0_s1_address),                //                        pio_display1_0_s1.address
@@ -386,6 +427,13 @@ module cpuqsys (
 		.pio_leds_0_s1_chipselect                       (mm_interconnect_0_pio_leds_0_s1_chipselect),                 //                                         .chipselect
 		.pio_left_right_0_s1_address                    (mm_interconnect_0_pio_left_right_0_s1_address),              //                      pio_left_right_0_s1.address
 		.pio_left_right_0_s1_readdata                   (mm_interconnect_0_pio_left_right_0_s1_readdata),             //                                         .readdata
+		.pio_ready_rsa_filter_0_s1_address              (mm_interconnect_0_pio_ready_rsa_filter_0_s1_address),        //                pio_ready_rsa_filter_0_s1.address
+		.pio_ready_rsa_filter_0_s1_write                (mm_interconnect_0_pio_ready_rsa_filter_0_s1_write),          //                                         .write
+		.pio_ready_rsa_filter_0_s1_readdata             (mm_interconnect_0_pio_ready_rsa_filter_0_s1_readdata),       //                                         .readdata
+		.pio_ready_rsa_filter_0_s1_writedata            (mm_interconnect_0_pio_ready_rsa_filter_0_s1_writedata),      //                                         .writedata
+		.pio_ready_rsa_filter_0_s1_chipselect           (mm_interconnect_0_pio_ready_rsa_filter_0_s1_chipselect),     //                                         .chipselect
+		.pio_set_value_0_s1_address                     (mm_interconnect_0_pio_set_value_0_s1_address),               //                       pio_set_value_0_s1.address
+		.pio_set_value_0_s1_readdata                    (mm_interconnect_0_pio_set_value_0_s1_readdata),              //                                         .readdata
 		.pio_up_down_0_s1_address                       (mm_interconnect_0_pio_up_down_0_s1_address),                 //                         pio_up_down_0_s1.address
 		.pio_up_down_0_s1_readdata                      (mm_interconnect_0_pio_up_down_0_s1_readdata),                //                                         .readdata
 		.ram_0_s1_address                               (mm_interconnect_0_ram_0_s1_address),                         //                                 ram_0_s1.address
