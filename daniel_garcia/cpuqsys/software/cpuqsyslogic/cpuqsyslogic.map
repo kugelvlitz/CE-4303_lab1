@@ -7,9 +7,11 @@ c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-el
 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
                               c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o) (__divsi3)
 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
-                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o) (__mulsi3)
+                              obj/default/hello_world_small.o (__mulsi3)
 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
                               c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o) (__clz_tab)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                              obj/default/hello_world_small.o (memcpy)
 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
                               obj/default/hello_world_small.o (alt_ic_isr_register)
 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
@@ -132,7 +134,7 @@ LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
                 0x0000000004000180                PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
                 0x0000000004000020                PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
 
-.text           0x0000000004000180     0x1a9c
+.text           0x0000000004000180     0x1d80
                 [!provide]                        PROVIDE (stext = ABSOLUTE (.))
  *(.interp)
  *(.hash)
@@ -179,54 +181,57 @@ LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x0000000004000180       0x3c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
                 0x0000000004000180                _start
- .text          0x00000000040001bc      0xec0 obj/default/hello_world_small.o
- .text.startup  0x000000000400107c       0x34 obj/default/hello_world_small.o
-                0x000000000400107c                main
- .text          0x00000000040010b0      0x104 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
-                0x00000000040010b0                __muldi3
- .text          0x00000000040011b4      0x614 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
-                0x00000000040011b4                __moddi3
- .text          0x00000000040017c8      0x1b4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                0x00000000040017c8                __divsi3
-                0x0000000004001848                __modsi3
-                0x00000000040018bc                __udivsi3
-                0x0000000004001920                __umodsi3
- .text          0x000000000400197c       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
-                0x000000000400197c                __mulsi3
- .text          0x00000000040019a4        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
- .text          0x00000000040019a4       0x8c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
-                0x00000000040019a4                alt_ic_isr_register
-                0x00000000040019a8                alt_ic_irq_enable
-                0x00000000040019e0                alt_ic_irq_disable
-                0x0000000004001a18                alt_ic_irq_enabled
- .text          0x0000000004001a30       0x68 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
-                0x0000000004001a30                alt_iic_isr_register
- .text          0x0000000004001a98        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
- .text          0x0000000004001a98        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
- .text          0x0000000004001a98        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
- .text          0x0000000004001a98       0xb4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
-                0x0000000004001a98                alt_load
- .text          0x0000000004001b4c       0x2c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
-                0x0000000004001b4c                alt_main
- .text          0x0000000004001b78       0x24 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
-                0x0000000004001b78                alt_irq_init
-                0x0000000004001b98                alt_sys_init
- .text          0x0000000004001b9c        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
-                0x0000000004001b9c                alt_dcache_flush_all
- .text          0x0000000004001ba0        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
- .text          0x0000000004001ba0        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
-                0x0000000004001ba0                alt_icache_flush_all
- .text          0x0000000004001ba4       0x70 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x0000000004001ba4                alt_exception_cause_generated_bad_addr
- .text          0x0000000004001c14        0x8 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
-                0x0000000004001c14                altera_nios2_gen2_irq_init
+ .text          0x00000000040001bc     0x117c obj/default/hello_world_small.o
+ .text.startup  0x0000000004001338       0x34 obj/default/hello_world_small.o
+                0x0000000004001338                main
+ .text          0x000000000400136c      0x104 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+                0x000000000400136c                __muldi3
+ .text          0x0000000004001470      0x614 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+                0x0000000004001470                __moddi3
+ .text          0x0000000004001a84      0x1b4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x0000000004001a84                __divsi3
+                0x0000000004001b04                __modsi3
+                0x0000000004001b78                __udivsi3
+                0x0000000004001bdc                __umodsi3
+ .text          0x0000000004001c38       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x0000000004001c38                __mulsi3
+ .text          0x0000000004001c60        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
+ .text          0x0000000004001c60        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .text.memcpy   0x0000000004001c60       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                0x0000000004001c60                memcpy
+ .text          0x0000000004001c88       0x8c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+                0x0000000004001c88                alt_ic_isr_register
+                0x0000000004001c8c                alt_ic_irq_enable
+                0x0000000004001cc4                alt_ic_irq_disable
+                0x0000000004001cfc                alt_ic_irq_enabled
+ .text          0x0000000004001d14       0x68 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+                0x0000000004001d14                alt_iic_isr_register
+ .text          0x0000000004001d7c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x0000000004001d7c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x0000000004001d7c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000004001d7c       0xb4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+                0x0000000004001d7c                alt_load
+ .text          0x0000000004001e30       0x2c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+                0x0000000004001e30                alt_main
+ .text          0x0000000004001e5c       0x24 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+                0x0000000004001e5c                alt_irq_init
+                0x0000000004001e7c                alt_sys_init
+ .text          0x0000000004001e80        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000004001e80                alt_dcache_flush_all
+ .text          0x0000000004001e84        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x0000000004001e84        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000004001e84                alt_icache_flush_all
+ .text          0x0000000004001e88       0x70 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000004001e88                alt_exception_cause_generated_bad_addr
+ .text          0x0000000004001ef8        0x8 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000004001ef8                altera_nios2_gen2_irq_init
  *(.gnu.warning.*)
  *(.fini)
                 [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
                 [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
                 [!provide]                        PROVIDE (etext = ABSOLUTE (.))
  *(.eh_frame_hdr)
-                0x0000000004001c1c                . = ALIGN (0x4)
+                0x0000000004001f00                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
@@ -248,122 +253,125 @@ LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
  *(SORT_BY_NAME(.dtors.*))
                 [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
  *(.jcr)
-                0x0000000004001c1c                . = ALIGN (0x4)
+                0x0000000004001f00                . = ALIGN (0x4)
 
-.rodata         0x0000000004002000      0x100
+.rodata         0x0000000004002000      0x124
                 0x0000000004002000                PROVIDE (__ram_rodata_start = ABSOLUTE (.))
                 0x0000000004002000                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000004002000      0x100 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
-                0x0000000004002000                __clz_tab
+ .rodata        0x0000000004002000       0x24 obj/default/hello_world_small.o
+ .rodata        0x0000000004002024      0x100 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
+                0x0000000004002024                __clz_tab
  *(.rodata1)
-                0x0000000004002100                . = ALIGN (0x4)
-                0x0000000004002100                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x0000000004002124                . = ALIGN (0x4)
+                0x0000000004002124                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
                 0x0000000004002000                PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
 
-.rwdata         0x0000000004002100       0x14
-                0x0000000004002100                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
-                0x0000000004002100                . = ALIGN (0x4)
+.rwdata         0x0000000004002124       0x1c
+                0x0000000004002124                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x0000000004002124                . = ALIGN (0x4)
  *(.got.plt)
  *(.got)
  *(.data1)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
- .data          0x0000000004002100        0x0 obj/default/hello_world_small.o
- .data          0x0000000004002100        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .data          0x0000000004002100        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
- .data          0x0000000004002100        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .data          0x0000000004002100        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .data          0x0000000004002100        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
- .data          0x0000000004002100        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
-                0x000000000400a100                _gp = ABSOLUTE ((. + 0x8000))
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .data          0x0000000004002124        0x0 obj/default/hello_world_small.o
+ .data          0x0000000004002124        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+ .data          0x0000000004002124        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+ .data          0x0000000004002124        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .data          0x0000000004002124        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .data          0x0000000004002124        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
+ .data          0x0000000004002124        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x0000000004002124        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x000000000400a124                _gp = ABSOLUTE ((. + 0x8000))
                 [!provide]                        PROVIDE (gp = _gp)
  *(.rwdata .rwdata.*)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata         0x0000000004002100       0x10 obj/default/hello_world_small.o
- .sdata         0x0000000004002110        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
-                0x0000000004002110                alt_priority_mask
+ .sdata         0x0000000004002124       0x18 obj/default/hello_world_small.o
+ .sdata         0x000000000400213c        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+                0x000000000400213c                alt_priority_mask
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x0000000004002114                . = ALIGN (0x4)
-                0x0000000004002114                _edata = ABSOLUTE (.)
+                0x0000000004002140                . = ALIGN (0x4)
+                0x0000000004002140                _edata = ABSOLUTE (.)
                 [!provide]                        PROVIDE (edata = ABSOLUTE (.))
-                0x0000000004002114                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
-                0x0000000004002100                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+                0x0000000004002140                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x0000000004002124                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
 
-.bss            0x0000000004002114      0x148
-                0x0000000004002114                __bss_start = ABSOLUTE (.)
+.bss            0x0000000004002140      0x15c
+                0x0000000004002140                __bss_start = ABSOLUTE (.)
                 [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0x0000000004002114       0x34 obj/default/hello_world_small.o
- .sbss          0x0000000004002148        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
-                0x0000000004002148                alt_irq_active
- .sbss          0x000000000400214c        0xc C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
-                0x000000000400214c                alt_envp
-                0x0000000004002150                alt_argv
-                0x0000000004002154                alt_argc
- .sbss          0x0000000004002158        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x0000000004002158                alt_instruction_exception_handler
+ .sbss          0x0000000004002140       0x48 obj/default/hello_world_small.o
+ .sbss          0x0000000004002188        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000004002188                alt_irq_active
+ .sbss          0x000000000400218c        0xc C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+                0x000000000400218c                alt_envp
+                0x0000000004002190                alt_argv
+                0x0000000004002194                alt_argc
+ .sbss          0x0000000004002198        0x4 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000004002198                alt_instruction_exception_handler
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
  *(.scommon)
                 [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
- .bss           0x000000000400215c        0x0 obj/default/hello_world_small.o
- .bss           0x000000000400215c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .bss           0x000000000400215c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
- .bss           0x000000000400215c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .bss           0x000000000400215c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .bss           0x000000000400215c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
- .bss           0x000000000400215c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
+ .bss           0x000000000400219c        0x0 obj/default/hello_world_small.o
+ .bss           0x000000000400219c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+ .bss           0x000000000400219c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+ .bss           0x000000000400219c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .bss           0x000000000400219c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .bss           0x000000000400219c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
+ .bss           0x000000000400219c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x000000000400219c        0x0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
  *(COMMON)
- COMMON         0x000000000400215c      0x100 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
-                0x000000000400215c                alt_irq
-                0x000000000400225c                . = ALIGN (0x4)
-                0x000000000400225c                __bss_end = ABSOLUTE (.)
+ COMMON         0x000000000400219c      0x100 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+                0x000000000400219c                alt_irq
+                0x000000000400229c                . = ALIGN (0x4)
+                0x000000000400229c                __bss_end = ABSOLUTE (.)
 
-.rom_0          0x0000000004001c1c        0x0
+.rom_0          0x0000000004001f00        0x0
                 [!provide]                        PROVIDE (_alt_partition_rom_0_start = ABSOLUTE (.))
  *(.rom_0 .rom_0. rom_0.*)
-                0x0000000004001c1c                . = ALIGN (0x4)
+                0x0000000004001f00                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_alt_partition_rom_0_end = ABSOLUTE (.))
                 [!provide]                        PROVIDE (_alt_partition_rom_0_load_addr = LOADADDR (.rom_0))
 
-.ram_0          0x000000000400225c        0x0
+.ram_0          0x000000000400229c        0x0
                 [!provide]                        PROVIDE (_alt_partition_ram_0_start = ABSOLUTE (.))
  *(.ram_0 .ram_0. ram_0.*)
-                0x000000000400225c                . = ALIGN (0x4)
+                0x000000000400229c                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_alt_partition_ram_0_end = ABSOLUTE (.))
-                0x000000000400225c                _end = ABSOLUTE (.)
-                0x000000000400225c                end = ABSOLUTE (.)
-                0x000000000400225c                __alt_stack_base = ABSOLUTE (.)
+                0x000000000400229c                _end = ABSOLUTE (.)
+                0x000000000400229c                end = ABSOLUTE (.)
+                0x000000000400229c                __alt_stack_base = ABSOLUTE (.)
                 [!provide]                        PROVIDE (_alt_partition_ram_0_load_addr = LOADADDR (.ram_0))
 
 .stab
@@ -393,6 +401,7 @@ LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
  .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
  .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
  .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
+ .comment       0x000000000000002c       0x2d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
  .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
  .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
  .comment       0x000000000000002c       0x2d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
@@ -417,7 +426,7 @@ LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x2b0
+.debug_aranges  0x0000000000000000      0x2d0
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
@@ -434,176 +443,185 @@ LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
  .debug_aranges
                 0x00000000000000d0       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
  .debug_aranges
-                0x00000000000000e8       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+                0x00000000000000e8       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
  .debug_aranges
-                0x0000000000000108       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+                0x0000000000000108       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
  .debug_aranges
-                0x0000000000000128       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+                0x0000000000000128       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
  .debug_aranges
-                0x0000000000000158       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000000148       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
  .debug_aranges
-                0x0000000000000178       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000000178       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
  .debug_aranges
-                0x0000000000000190       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+                0x0000000000000198       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
  .debug_aranges
-                0x00000000000001b0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+                0x00000000000001b0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
  .debug_aranges
-                0x00000000000001d0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+                0x00000000000001d0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
  .debug_aranges
-                0x00000000000001f0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00000000000001f0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
  .debug_aranges
-                0x0000000000000210       0x38 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+                0x0000000000000210       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
  .debug_aranges
-                0x0000000000000248       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000000000230       0x38 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
  .debug_aranges
-                0x0000000000000268       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000000268       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
  .debug_aranges
-                0x0000000000000290       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000000288       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x00000000000002b0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x84cd
+.debug_info     0x0000000000000000     0x9324
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000       0x22 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
- .debug_info    0x0000000000000022      0xdca obj/default/hello_world_small.o
- .debug_info    0x0000000000000dec      0x317 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_info    0x0000000000001103      0x9bf c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
- .debug_info    0x0000000000001ac2      0x368 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_info    0x0000000000001e2a       0xcb c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_info    0x0000000000001ef5      0x179 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
- .debug_info    0x000000000000206e      0xca2 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
- .debug_info    0x0000000000002d10      0xb3a C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_info    0x000000000000384a       0x22 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
- .debug_info    0x000000000000386c      0xa61 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
- .debug_info    0x00000000000042cd       0x8b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
- .debug_info    0x0000000000004358      0xaed C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
- .debug_info    0x0000000000004e45      0xeb0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
- .debug_info    0x0000000000005cf5      0x9ea C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
- .debug_info    0x00000000000066df      0x934 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_info    0x0000000000007013       0x22 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
- .debug_info    0x0000000000007035      0x934 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_info    0x0000000000007969      0x20f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_info    0x0000000000007b78      0x955 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000000000000022     0x1021 obj/default/hello_world_small.o
+ .debug_info    0x0000000000001043      0x317 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_info    0x000000000000135a      0x9bf c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+ .debug_info    0x0000000000001d19      0x368 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_info    0x0000000000002081       0xcb c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_info    0x000000000000214c      0x179 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_info    0x00000000000022c5      0xc00 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000002ec5      0xca2 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x0000000000003b67      0xb3a C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x00000000000046a1       0x22 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00000000000046c3      0xa61 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000005124       0x8b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x00000000000051af      0xaed C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000005c9c      0xeb0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000006b4c      0x9ea C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000007536      0x934 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x0000000000007e6a       0x22 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0000000000007e8c      0x934 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000000000087c0      0x20f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x00000000000089cf      0x955 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
 
-.debug_abbrev   0x0000000000000000     0x2038
+.debug_abbrev   0x0000000000000000     0x229f
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000       0x12 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
- .debug_abbrev  0x0000000000000012      0x3b0 obj/default/hello_world_small.o
- .debug_abbrev  0x00000000000003c2      0x157 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_abbrev  0x0000000000000519      0x207 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
- .debug_abbrev  0x0000000000000720      0x103 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_abbrev  0x0000000000000823       0x7d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_abbrev  0x00000000000008a0       0xa8 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
- .debug_abbrev  0x0000000000000948      0x31f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
- .debug_abbrev  0x0000000000000c67      0x303 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_abbrev  0x0000000000000f6a       0x12 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
- .debug_abbrev  0x0000000000000f7c      0x283 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
- .debug_abbrev  0x00000000000011ff       0x44 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
- .debug_abbrev  0x0000000000001243      0x277 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
- .debug_abbrev  0x00000000000014ba      0x252 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
- .debug_abbrev  0x000000000000170c      0x25f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
- .debug_abbrev  0x000000000000196b      0x1e0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_abbrev  0x0000000000001b4b       0x12 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
- .debug_abbrev  0x0000000000001b5d      0x1e0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_abbrev  0x0000000000001d3d      0x116 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_abbrev  0x0000000000001e53      0x1e5 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x0000000000000012      0x434 obj/default/hello_world_small.o
+ .debug_abbrev  0x0000000000000446      0x157 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_abbrev  0x000000000000059d      0x207 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+ .debug_abbrev  0x00000000000007a4      0x103 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x00000000000008a7       0x7d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x0000000000000924       0xa8 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_abbrev  0x00000000000009cc      0x1e3 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000000baf      0x31f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x0000000000000ece      0x303 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x00000000000011d1       0x12 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00000000000011e3      0x283 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000001466       0x44 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00000000000014aa      0x277 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000000000001721      0x252 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000001973      0x25f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000001bd2      0x1e0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000000000001db2       0x12 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000000000001dc4      0x1e0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000000000001fa4      0x116 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x00000000000020ba      0x1e5 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
 
-.debug_line     0x0000000000000000     0x2b5d
+.debug_line     0x0000000000000000     0x30b6
  *(.debug_line)
  .debug_line    0x0000000000000000       0x66 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
- .debug_line    0x0000000000000066      0xc70 obj/default/hello_world_small.o
- .debug_line    0x0000000000000cd6      0x190 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_line    0x0000000000000e66      0x425 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
- .debug_line    0x000000000000128b      0x2f9 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_line    0x0000000000001584       0xb6 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_line    0x000000000000163a       0xb4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
- .debug_line    0x00000000000016ee      0x27b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
- .debug_line    0x0000000000001969      0x235 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_line    0x0000000000001b9e       0x6b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
- .debug_line    0x0000000000001c09      0x203 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
- .debug_line    0x0000000000001e0c       0x50 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
- .debug_line    0x0000000000001e5c      0x25b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
- .debug_line    0x00000000000020b7      0x309 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
- .debug_line    0x00000000000023c0      0x1c6 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
- .debug_line    0x0000000000002586      0x17f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_line    0x0000000000002705       0xb3 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
- .debug_line    0x00000000000027b8      0x17d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_line    0x0000000000002935       0xee C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_line    0x0000000000002a23      0x13a C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x0000000000000066      0xf49 obj/default/hello_world_small.o
+ .debug_line    0x0000000000000faf      0x190 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_line    0x000000000000113f      0x425 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+ .debug_line    0x0000000000001564      0x2f9 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_line    0x000000000000185d       0xb6 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_line    0x0000000000001913       0xb4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_line    0x00000000000019c7      0x280 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000001c47      0x27b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000000000001ec2      0x235 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x00000000000020f7       0x6b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000002162      0x203 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000000000002365       0x50 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000000000023b5      0x25b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000002610      0x309 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000002919      0x1c6 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000002adf      0x17f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000002c5e       0xb3 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000002d11      0x17d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0000000000002e8e       0xee C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x0000000000002f7c      0x13a C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
 
-.debug_frame    0x0000000000000000      0x370
+.debug_frame    0x0000000000000000      0x3e0
  *(.debug_frame)
- .debug_frame   0x0000000000000000       0x78 obj/default/hello_world_small.o
- .debug_frame   0x0000000000000078       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_frame   0x00000000000000c8       0x54 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
- .debug_frame   0x000000000000011c       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_frame   0x000000000000016c       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_frame   0x000000000000018c       0x50 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
- .debug_frame   0x00000000000001dc       0x38 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_frame   0x0000000000000214       0x34 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
- .debug_frame   0x0000000000000248       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
- .debug_frame   0x0000000000000278       0x2c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
- .debug_frame   0x00000000000002a4       0x3c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
- .debug_frame   0x00000000000002e0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_frame   0x0000000000000300       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_frame   0x0000000000000320       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_frame   0x0000000000000350       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x0000000000000000       0xc8 obj/default/hello_world_small.o
+ .debug_frame   0x00000000000000c8       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_frame   0x0000000000000118       0x54 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+ .debug_frame   0x000000000000016c       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x00000000000001bc       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_frame   0x00000000000001dc       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_frame   0x00000000000001fc       0x50 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x000000000000024c       0x38 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x0000000000000284       0x34 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000000000002b8       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000000000002e8       0x2c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x0000000000000314       0x3c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000000000000350       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000000000000370       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000000000000390       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x00000000000003c0       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
 
-.debug_str      0x0000000000000000     0x1527
+.debug_str      0x0000000000000000     0x19e2
  *(.debug_str)
  .debug_str     0x0000000000000000       0x69 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
- .debug_str     0x0000000000000069      0x65b obj/default/hello_world_small.o
-                                        0x70e (size before relaxing)
- .debug_str     0x00000000000006c4      0x21f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_str     0x0000000000000069      0x713 obj/default/hello_world_small.o
+                                        0x816 (size before relaxing)
+ .debug_str     0x000000000000077c      0x21f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
                                         0x2b4 (size before relaxing)
- .debug_str     0x00000000000008e3       0xed c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+ .debug_str     0x000000000000099b       0xed c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
                                         0x30f (size before relaxing)
- .debug_str     0x00000000000009d0       0x81 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_str     0x0000000000000a88       0x81 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
                                         0x1de (size before relaxing)
- .debug_str     0x0000000000000a51       0x42 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_str     0x0000000000000b09       0x42 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
                                         0x19f (size before relaxing)
- .debug_str     0x0000000000000a93      0x257 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
- .debug_str     0x0000000000000a93       0xf2 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_str     0x0000000000000b4b      0x257 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_str     0x0000000000000b4b      0x40d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                                        0x7f4 (size before relaxing)
+ .debug_str     0x0000000000000f58       0xf2 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
                                         0x648 (size before relaxing)
- .debug_str     0x0000000000000b85       0x37 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_str     0x000000000000104a       0x37 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
                                         0x614 (size before relaxing)
- .debug_str     0x0000000000000bbc       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_str     0x0000000000001081       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
                                          0x72 (size before relaxing)
- .debug_str     0x0000000000000bd4       0x3a C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_str     0x0000000000001099       0x3a C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
                                         0x59e (size before relaxing)
- .debug_str     0x0000000000000c0e       0x29 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
+ .debug_str     0x00000000000010d3       0x29 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_vars.o)
                                         0x154 (size before relaxing)
- .debug_str     0x0000000000000c37      0x11d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_str     0x00000000000010fc      0x113 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
                                         0x636 (size before relaxing)
- .debug_str     0x0000000000000d54      0x23d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
+ .debug_str     0x000000000000120f      0x23d C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_main.o)
                                         0x7e8 (size before relaxing)
- .debug_str     0x0000000000000f91       0x8f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_str     0x000000000000144c       0x8f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
                                         0x5de (size before relaxing)
- .debug_str     0x0000000000001020       0x1f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x00000000000014db       0x1f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
                                         0x54f (size before relaxing)
- .debug_str     0x000000000000103f       0x1e C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_str     0x00000000000014fa       0x1e C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
                                          0x78 (size before relaxing)
- .debug_str     0x000000000000105d       0x1f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x0000000000001518       0x1f C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_icache_flush_all.o)
                                         0x54f (size before relaxing)
- .debug_str     0x000000000000107c      0x48b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_str     0x0000000000001537      0x48b C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
                                         0x5ba (size before relaxing)
- .debug_str     0x0000000000001507       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_str     0x00000000000019c2       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(altera_nios2_gen2_irq.o)
                                         0x563 (size before relaxing)
 
-.debug_loc      0x0000000000000000     0x1f42
+.debug_loc      0x0000000000000000     0x2241
  *(.debug_loc)
- .debug_loc     0x0000000000000000      0x271 obj/default/hello_world_small.o
- .debug_loc     0x0000000000000271      0x1eb c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_loc     0x000000000000045c      0xe84 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
- .debug_loc     0x00000000000012e0      0x5d0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_loc     0x00000000000018b0       0xa7 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_loc     0x0000000000001957      0x205 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
- .debug_loc     0x0000000000001b5c      0x23c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_loc     0x0000000000001d98       0xac C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
- .debug_loc     0x0000000000001e44       0x66 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
- .debug_loc     0x0000000000001eaa       0x25 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
- .debug_loc     0x0000000000001ecf       0x73 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_loc     0x0000000000000000      0x446 obj/default/hello_world_small.o
+ .debug_loc     0x0000000000000446      0x1eb c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_loc     0x0000000000000631      0xe84 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+ .debug_loc     0x00000000000014b5      0x5d0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x0000000000001a85       0xa7 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_loc     0x0000000000001b2c      0x12a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_loc     0x0000000000001c56      0x205 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x0000000000001e5b      0x23c C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x0000000000002097       0xac C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x0000000000002143       0x66 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x00000000000021a9       0x25 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000000000021ce       0x73 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -632,15 +650,16 @@ LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
                 [!provide]                        PROVIDE (__alt_heap_limit = 0x4004000)
 OUTPUT(cpuqsyslogic.elf elf32-littlenios2)
 
-.debug_ranges   0x0000000000000000      0x528
+.debug_ranges   0x0000000000000000      0x5f0
  .debug_ranges  0x0000000000000000       0x20 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp/obj/HAL/src/crt0.o
- .debug_ranges  0x0000000000000020      0x168 obj/default/hello_world_small.o
- .debug_ranges  0x0000000000000188       0x40 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_ranges  0x00000000000001c8      0x1a0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
- .debug_ranges  0x0000000000000368       0x70 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_ranges  0x00000000000003d8       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_ranges  0x00000000000003f0       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
- .debug_ranges  0x0000000000000418       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
- .debug_ranges  0x0000000000000440       0xa0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
- .debug_ranges  0x00000000000004e0       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
- .debug_ranges  0x0000000000000510       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_ranges  0x0000000000000020      0x220 obj/default/hello_world_small.o
+ .debug_ranges  0x0000000000000240       0x40 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_ranges  0x0000000000000280      0x1a0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(_moddi3.o)
+ .debug_ranges  0x0000000000000420       0x70 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_ranges  0x0000000000000490       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_ranges  0x00000000000004a0       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_ranges  0x00000000000004b8       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000000000004e0       0x28 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x0000000000000508       0xa0 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x00000000000005a8       0x30 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x00000000000005d8       0x18 C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/software/cpuqsyslogic_bsp\libhal_bsp.a(alt_instruction_exception_entry.o)

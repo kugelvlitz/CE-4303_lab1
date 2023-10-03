@@ -5,6 +5,12 @@
 
 #include "system.h"
 
+static unsigned int current_width = 0;
+static unsigned int current_height = 0;
+static unsigned int width = 0;
+static unsigned int height = 2;
+
+static unsigned int readyrsafilter = 0;
 
 static unsigned int display1 = 0;
 static unsigned int display2 = 0;
@@ -23,6 +29,11 @@ static unsigned int last_set_val = 0;
 static unsigned int continue0 = 0;
 static unsigned int last_continue0 = 0;
 
+static unsigned int reveal = 0;
+static unsigned int last_reveal = 0;
+
+static unsigned int current_pixel_d = 0;
+
 
 static unsigned btnleftright = 3;
 static unsigned lastbtnleftright = 3;
@@ -31,8 +42,8 @@ static unsigned int display_selector = 0;
 static unsigned btnupdown = 3;
 static unsigned lastbtnupdown = 3;
 
-static unsigned pixel1 = 13;
-static unsigned pixel2 = 157;
+static unsigned pixel1 = 66;
+static unsigned pixel2 = 3;
 static unsigned current_pixel = 0;
 
 // Mapeo para los displays
@@ -238,6 +249,41 @@ static long descifrar_rsa(long a, long b, long m) {
 
 }
 
+// Función para aplicar el filtro Laplaciano a un valor de píxel
+static int filtro_laplaciano(int valor_pixel) {
+    // Coeficientes del filtro Laplaciano
+    int coeficientes[3][3] = {
+        {0, -1, 0},
+        {-1, 4, -1},
+        {0, -1, 0}
+    };
+
+    int resultado = 0;
+
+    for (int i = -1; i <= 1; i++) {
+        for (int j = -1; j <= 1; j++) {
+            // Comprobar los límites del píxel
+            if (valor_pixel + i >= 0 && valor_pixel + i <= 255 &&
+                valor_pixel + j >= 0 && valor_pixel + j <= 255) {
+                resultado += coeficientes[i + 1][j + 1] * (valor_pixel + i);
+            }
+        }
+    }
+
+    // Asegurarse de que el valor resultante esté en el rango de 0 a 255
+    resultado = (resultado < 0) ? 0 : (resultado > 255) ? 255 : resultado;
+
+    return resultado;
+}
+
+static void clean_displays(){
+	display1 = 0;
+	display2 = 0;
+	display3 = 0;
+	display4 = 0;
+	display5 = 0;
+	display6 = 0;
+}
 
 
 void static handlesetvalue(){
@@ -254,20 +300,9 @@ void static handlesetvalue(){
 				totalkeys--;
 				private_key1 = decimal;
 
-				display1 = decimal%10;
-				display2 = decimal/10%10;
-				display3 = decimal/100%10;
-				display4 = decimal/1000%10;
-				display5 = decimal/10000%10;
+				clean_displays();
 
-				/*display1 = 0;
-				display2 = 0;
-				display3 = 0;
-				display4 = 0;
-				display5 = 0;
-				display6 = 0;*/
-
-				IOWR_ALTERA_AVALON_PIO_DATA(PIO_READY_RSA_FILTER_0_BASE, totalkeys);
+				IOWR_ALTERA_AVALON_PIO_DATA(PIO_CURRENT_KEY_0_BASE, totalkeys);
 
 			}
 
@@ -275,20 +310,9 @@ void static handlesetvalue(){
 				totalkeys++;
 				private_key2 = decimal;
 
-				display1 = decimal%10;
-				display2 = decimal/10%10;
-				display3 = decimal/100%10;
-				display4 = decimal/1000%10;
-				display5 = decimal/10000%10;
+				clean_displays();
 
-				/*display1 = 0;
-				display2 = 0;
-				display3 = 0;
-				display4 = 0;
-				display5 = 0;
-				display6 = 0;*/
-
-				IOWR_ALTERA_AVALON_PIO_DATA(PIO_READY_RSA_FILTER_0_BASE, totalkeys);
+				IOWR_ALTERA_AVALON_PIO_DATA(PIO_CURRENT_KEY_0_BASE, totalkeys);
 			}
 	}if(set_val == 0){
 		last_set_val = 0;
@@ -300,41 +324,125 @@ void static handlesetvalue(){
 void static handlecontinue0(){
 
 	continue0 = IORD_ALTERA_AVALON_PIO_DATA(PIO_CONTINUE_0_BASE);
+	readyrsafilter = IORD_ALTERA_AVALON_PIO_DATA(PIO_READY_RSA_FILTER_0_BASE);
 
 
-	if((continue0 != last_continue0) && (continue0 == 1)){
+	if((continue0 != last_continue0) && (continue0 == 1) && (readyrsafilter == 0)){
 		last_continue0 = continue0;
 
 		if(current_pixel == 0){
-			unsigned int des_value = descifrar_rsa(pixel1,private_key1,private_key2);
-			unsigned int divv = des_value/16;
-			display5 = des_value-16*divv;
+			pixel1 = descifrar_rsa(pixel1,private_key1,private_key2);
+			current_pixel_d = pixel1;
+			unsigned int divv = pixel1/16;
+			display5 = pixel1-16*divv;
 			display6 = divv;
 
 		}else if(current_pixel == 1){
-			unsigned int des_value = descifrar_rsa(pixel2,private_key1,private_key2);
-			unsigned int divv = des_value/16;
-			display5 = des_value-16*divv;
+			pixel2 = descifrar_rsa(pixel2,private_key1,private_key2);
+			current_pixel_d = pixel2;
+			unsigned int divv = pixel2/16;
+			display5 = pixel2-16*divv;
 			display6 = divv;
 		}
 
 		current_pixel++;
+		current_height++;
 
-	}if(continue0 == 0){
+	}else if(continue0 == 0){
 		last_continue0 = 0;
 
+	}else if((continue0 != last_continue0) && (continue0 == 1) && (readyrsafilter == 1)){
+
+		last_continue0 = continue0;
+
+		if(current_pixel == 0){
+			pixel1 = filtro_laplaciano(pixel1);
+			current_pixel_d = pixel1;
+			unsigned int divv = pixel1/16;
+			display5 = pixel1-16*divv;
+			display6 = divv;
+
+		}else if(current_pixel == 1){
+			pixel2 = filtro_laplaciano(pixel2);
+			current_pixel_d = pixel2;
+			unsigned int divv = pixel2/16;
+			display5 = pixel2-16*divv;
+			display6 = divv;
+		}
+
+		current_pixel++;
+		current_height++;
 	}
 
 }
 
+static void reveal_private_key1(){
+
+	display1 = private_key1%10;
+	display2 = private_key1/10%10;
+	display3 = private_key1/100%10;
+	display4 = private_key1/1000%10;
+	display5 = private_key1/10000%10;
+}
+
+static void reveal_private_key2(){
+
+	display1 = private_key2%10;
+	display2 = private_key2/10%10;
+	display3 = private_key2/100%10;
+	display4 = private_key2/1000%10;
+	display5 = private_key2/10000%10;
+}
+
+
+static void reveal_pixel(){
+
+	display1 = current_pixel_d%10;
+	display2 = current_pixel_d/10%10;
+	display3 = current_pixel_d/100%10;
+}
+
+static void handlereveal(){
+
+	reveal = IORD_ALTERA_AVALON_PIO_DATA(PIO_REVEAL_DECIMAL_0_BASE);
+
+	if((reveal != last_reveal) && ((reveal == 1)|| (reveal == 2) || (reveal == 3) )){
+
+			last_reveal = reveal;
+
+			if(reveal == 1){
+				reveal_private_key1();
+			}else if(reveal == 2){
+				reveal_pixel();
+			}else if(reveal == 3){
+				reveal_private_key2();
+			}
+		}else if((reveal != last_reveal) && (reveal == 0)){
+			last_reveal = reveal;
+			clean_displays();
+		}
+
+
+}
+
+void static handle_ready_rsa_filter(){
+
+	if((current_width == width)&&(current_height==height)){
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_READY_RSA_FILTER_0_BASE, 1);
+		current_height = 0;
+		current_width = 0;
+		current_pixel = 0;
+	}
+}
+
 void static show_current_selection(){
 
-	if(display_selector == 0) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 4);
-	if(display_selector == 1) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 8);
-	if(display_selector == 2) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 16);
-	if(display_selector == 3) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 32);
-	if(display_selector == 4) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 64);
-	if(display_selector == 5) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 128);
+	if(display_selector == 0) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 1);
+	if(display_selector == 1) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 2);
+	if(display_selector == 2) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 4);
+	if(display_selector == 3) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 8);
+	if(display_selector == 4) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 16);
+	if(display_selector == 5) IOWR_ALTERA_AVALON_PIO_DATA(PIO_LEDS_0_BASE, 32);
 
 }
 
@@ -351,6 +459,8 @@ static void timer_isr(void *context)
 	handleupdownbnt();
 	handlesetvalue();
 	handlecontinue0();
+	handlereveal();
+	handle_ready_rsa_filter();
 	show_current_selection();
 	displaymap();
 

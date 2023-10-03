@@ -100,6 +100,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "current_key[0]",
+					"strict" : false
+				},
+				{
+					"name" : "current_key[1]",
+					"strict" : false
+				},
+				{
 					"name" : "display1[0]",
 					"strict" : false
 				},
@@ -292,14 +300,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "leds[6]",
-					"strict" : false
-				},
-				{
-					"name" : "leds[7]",
-					"strict" : false
-				},
-				{
 					"name" : "ready_rsa_filter[0]",
 					"strict" : false
 				},
@@ -440,10 +440,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "continue0",
-					"strict" : false
-				},
-				{
 					"name" : "left_right[0]",
 					"strict" : false
 				},
@@ -460,11 +456,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "reveal_decimal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "continue0",
+					"strict" : false
+				},
+				{
 					"name" : "left_right[1]",
 					"strict" : false
 				},
 				{
 					"name" : "up_down[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reveal_decimal[1]",
 					"strict" : false
 				},
 				{

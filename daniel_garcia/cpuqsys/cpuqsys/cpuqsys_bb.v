@@ -10,6 +10,7 @@ module cpuqsys (
 	new_sdram_controller_0_wire_dqm,
 	new_sdram_controller_0_wire_ras_n,
 	new_sdram_controller_0_wire_we_n,
+	pio_auto_manual_0_external_connection_export,
 	pio_continue_0_external_connection_export,
 	pio_display1_0_external_connection_export,
 	pio_display2_0_external_connection_export,
@@ -19,11 +20,12 @@ module cpuqsys (
 	pio_display6_0_external_connection_export,
 	pio_leds_0_external_connection_export,
 	pio_left_right_0_external_connection_export,
+	pio_ready_rsa_filter_0_external_connection_export,
+	pio_set_value_0_external_connection_export,
 	pio_up_down_0_external_connection_export,
 	reset_reset_n,
-	pio_set_value_0_external_connection_export,
-	pio_auto_manual_0_external_connection_export,
-	pio_ready_rsa_filter_0_external_connection_export);	
+	pio_current_key_0_external_connection_export,
+	pio_reveal_decimal_0_external_connection_export);	
 
 	input		clk_clk;
 	output	[13:0]	new_sdram_controller_0_wire_addr;
@@ -35,6 +37,7 @@ module cpuqsys (
 	output	[3:0]	new_sdram_controller_0_wire_dqm;
 	output		new_sdram_controller_0_wire_ras_n;
 	output		new_sdram_controller_0_wire_we_n;
+	input		pio_auto_manual_0_external_connection_export;
 	input		pio_continue_0_external_connection_export;
 	output	[6:0]	pio_display1_0_external_connection_export;
 	output	[6:0]	pio_display2_0_external_connection_export;
@@ -42,11 +45,12 @@ module cpuqsys (
 	output	[6:0]	pio_display4_0_external_connection_export;
 	output	[6:0]	pio_display5_0_external_connection_export;
 	output	[6:0]	pio_display6_0_external_connection_export;
-	output	[7:0]	pio_leds_0_external_connection_export;
+	output	[5:0]	pio_leds_0_external_connection_export;
 	input	[1:0]	pio_left_right_0_external_connection_export;
+	output	[1:0]	pio_ready_rsa_filter_0_external_connection_export;
+	input		pio_set_value_0_external_connection_export;
 	input	[1:0]	pio_up_down_0_external_connection_export;
 	input		reset_reset_n;
-	input		pio_set_value_0_external_connection_export;
-	input		pio_auto_manual_0_external_connection_export;
-	output	[1:0]	pio_ready_rsa_filter_0_external_connection_export;
+	output	[1:0]	pio_current_key_0_external_connection_export;
+	input	[1:0]	pio_reveal_decimal_0_external_connection_export;
 endmodule
