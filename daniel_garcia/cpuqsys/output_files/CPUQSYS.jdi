@@ -85,7 +85,7 @@
   <sld_infos>
     <sld_info hpath="cpuqsys:cpu" name="cpu">
       <assignment_values>
-        <assignment_value text="QSYS_NAME cpuqsys HAS_SOPCINFO 1 GENERATION_ID 1696328028"/>
+        <assignment_value text="QSYS_NAME cpuqsys HAS_SOPCINFO 1 GENERATION_ID 1696356808"/>
       </assignment_values>
       <parameters/>
     </sld_info>

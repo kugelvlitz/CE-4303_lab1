@@ -5,7 +5,7 @@
 
 #include "system.h"
 
-static unsigned leds = 0;
+
 static unsigned int display1 = 0;
 static unsigned int display2 = 0;
 static unsigned int display3 = 0;
@@ -14,10 +14,14 @@ static unsigned int display5 = 0;
 static unsigned int display6 = 0;
 
 static unsigned int totalkeys = 2;
-static unsigned int public_key = 0;
-static unsigned int private_key = 0;
+static unsigned int private_key1 = 0;
+static unsigned int private_key2 = 0;
+
 static unsigned int set_val = 0;
 static unsigned int last_set_val = 0;
+
+static unsigned int continue0 = 0;
+static unsigned int last_continue0 = 0;
 
 
 static unsigned btnleftright = 3;
@@ -26,6 +30,10 @@ static unsigned int display_selector = 0;
 
 static unsigned btnupdown = 3;
 static unsigned lastbtnupdown = 3;
+
+static unsigned pixel1 = 13;
+static unsigned pixel2 = 157;
+static unsigned current_pixel = 0;
 
 // Mapeo para los displays
 static void displaymap(){
@@ -212,34 +220,109 @@ void static handleupdownbnt(){
 }
 
 
+
+// Función para descifrar un número cifrado usando la clave privada (d, n)
+static long descifrar_rsa(long a, long b, long m) {
+
+	    long long x = 1, y = a;
+	    while (b > 0)
+	    {
+	        if (b % 2 == 1)
+	        {
+	            x = (x * y) % m;
+	        }
+	        y = (y * y) % m;
+	        b /= 2;
+	    }
+	    return x % m;
+
+}
+
+
+
 void static handlesetvalue(){
 
 	set_val = IORD_ALTERA_AVALON_PIO_DATA(PIO_SET_VALUE_0_BASE);
 
+
 	if((set_val != last_set_val) && (set_val == 1)){
 		last_set_val = set_val;
+
 		unsigned int decimal = display1 + display2*16 + display3*16*16 + display4*16*16*16;
 
-		if(totalkeys == 0){
-				totalkeys++;
-				public_key = decimal;
+		if(totalkeys == 2){
+				totalkeys--;
+				private_key1 = decimal;
+
 				display1 = decimal%10;
 				display2 = decimal/10%10;
 				display3 = decimal/100%10;
 				display4 = decimal/1000%10;
+				display5 = decimal/10000%10;
+
+				/*display1 = 0;
+				display2 = 0;
+				display3 = 0;
+				display4 = 0;
+				display5 = 0;
+				display6 = 0;*/
+
+				IOWR_ALTERA_AVALON_PIO_DATA(PIO_READY_RSA_FILTER_0_BASE, totalkeys);
 
 			}
 
 		else if(totalkeys == 1){
-				private_key = decimal;
+				totalkeys++;
+				private_key2 = decimal;
+
 				display1 = decimal%10;
 				display2 = decimal/10%10;
 				display3 = decimal/100%10;
 				display4 = decimal/1000%10;
-				totalkeys++;
+				display5 = decimal/10000%10;
+
+				/*display1 = 0;
+				display2 = 0;
+				display3 = 0;
+				display4 = 0;
+				display5 = 0;
+				display6 = 0;*/
+
+				IOWR_ALTERA_AVALON_PIO_DATA(PIO_READY_RSA_FILTER_0_BASE, totalkeys);
 			}
 	}if(set_val == 0){
 		last_set_val = 0;
+
+	}
+
+}
+
+void static handlecontinue0(){
+
+	continue0 = IORD_ALTERA_AVALON_PIO_DATA(PIO_CONTINUE_0_BASE);
+
+
+	if((continue0 != last_continue0) && (continue0 == 1)){
+		last_continue0 = continue0;
+
+		if(current_pixel == 0){
+			unsigned int des_value = descifrar_rsa(pixel1,private_key1,private_key2);
+			unsigned int divv = des_value/16;
+			display5 = des_value-16*divv;
+			display6 = divv;
+
+		}else if(current_pixel == 1){
+			unsigned int des_value = descifrar_rsa(pixel2,private_key1,private_key2);
+			unsigned int divv = des_value/16;
+			display5 = des_value-16*divv;
+			display6 = divv;
+		}
+
+		current_pixel++;
+
+	}if(continue0 == 0){
+		last_continue0 = 0;
+
 	}
 
 }
@@ -255,6 +338,7 @@ void static show_current_selection(){
 
 }
 
+
 static void timer_isr(void *context)
 {
 	// No usamos esto
@@ -266,6 +350,7 @@ static void timer_isr(void *context)
 	handleleftrightbtn();
 	handleupdownbnt();
 	handlesetvalue();
+	handlecontinue0();
 	show_current_selection();
 	displaymap();
 

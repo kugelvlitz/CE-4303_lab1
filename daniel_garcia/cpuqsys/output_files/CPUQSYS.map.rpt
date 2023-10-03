@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPUQSYS
-Tue Oct 03 04:14:40 2023
+Tue Oct 03 12:14:57 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -314,7 +314,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 03 04:14:39 2023       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 03 12:14:56 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; CPUQSYS                                     ;
 ; Top-level Entity Name           ; cpuqsystop                                  ;
@@ -8059,7 +8059,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -8069,55 +8069,55 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Oct 03 04:13:35 2023
+    Info: Processing started: Tue Oct 03 12:13:15 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPUQSYS -c CPUQSYS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12248): Elaborating Platform Designer system entity "cpuqsys.qsys"
-Info (12250): 2023.10.03.04:13:44 Progress: Loading cpuqsys/cpuqsys.qsys
-Info (12250): 2023.10.03.04:13:45 Progress: Reading input file
-Info (12250): 2023.10.03.04:13:45 Progress: Adding clk_0 [clock_source 20.1]
-Info (12250): 2023.10.03.04:13:45 Progress: Parameterizing module clk_0
-Info (12250): 2023.10.03.04:13:45 Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 20.1]
-Info (12250): 2023.10.03.04:13:45 Progress: Parameterizing module new_sdram_controller_0
-Info (12250): 2023.10.03.04:13:45 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module nios2_gen2_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_auto_manual_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_auto_manual_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_continue_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_continue_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_display1_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_display1_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_display2_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_display2_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_display3_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_display3_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_display4_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_display4_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_display5_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_display5_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_display6_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_display6_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_leds_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_leds_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_left_right_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_left_right_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_ready_rsa_filter_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_ready_rsa_filter_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_set_value_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_set_value_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding pio_up_down_0 [altera_avalon_pio 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module pio_up_down_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding ram_0 [altera_avalon_onchip_memory2 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module ram_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding rom_0 [altera_avalon_onchip_memory2 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module rom_0
-Info (12250): 2023.10.03.04:13:46 Progress: Adding timer_0 [altera_avalon_timer 20.1]
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing module timer_0
-Info (12250): 2023.10.03.04:13:46 Progress: Building connections
-Info (12250): 2023.10.03.04:13:46 Progress: Parameterizing connections
-Info (12250): 2023.10.03.04:13:46 Progress: Validating
-Info (12250): 2023.10.03.04:13:47 Progress: Done reading input file
+Info (12250): 2023.10.03.12:13:25 Progress: Loading cpuqsys/cpuqsys.qsys
+Info (12250): 2023.10.03.12:13:25 Progress: Reading input file
+Info (12250): 2023.10.03.12:13:25 Progress: Adding clk_0 [clock_source 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module clk_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module new_sdram_controller_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module nios2_gen2_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_auto_manual_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_auto_manual_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_continue_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_continue_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_display1_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_display1_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_display2_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_display2_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_display3_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_display3_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_display4_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_display4_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_display5_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_display5_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_display6_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_display6_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_leds_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_leds_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_left_right_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_left_right_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_ready_rsa_filter_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_ready_rsa_filter_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_set_value_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_set_value_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding pio_up_down_0 [altera_avalon_pio 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module pio_up_down_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding ram_0 [altera_avalon_onchip_memory2 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module ram_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding rom_0 [altera_avalon_onchip_memory2 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module rom_0
+Info (12250): 2023.10.03.12:13:26 Progress: Adding timer_0 [altera_avalon_timer 20.1]
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing module timer_0
+Info (12250): 2023.10.03.12:13:26 Progress: Building connections
+Info (12250): 2023.10.03.12:13:26 Progress: Parameterizing connections
+Info (12250): 2023.10.03.12:13:26 Progress: Validating
+Info (12250): 2023.10.03.12:13:27 Progress: Done reading input file
 Info (12250): Cpuqsys.new_sdram_controller_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
 Info (12250): Cpuqsys.pio_auto_manual_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info (12250): Cpuqsys.pio_continue_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
@@ -8126,40 +8126,40 @@ Info (12250): Cpuqsys.pio_set_value_0: PIO inputs are not hardwired in test benc
 Info (12250): Cpuqsys.pio_up_down_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info (12250): Cpuqsys: Generating cpuqsys "cpuqsys" for QUARTUS_SYNTH
 Info (12250): New_sdram_controller_0: Starting RTL generation for module 'cpuqsys_new_sdram_controller_0'
-Info (12250): New_sdram_controller_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=cpuqsys_new_sdram_controller_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0002_new_sdram_controller_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0002_new_sdram_controller_0_gen//cpuqsys_new_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): New_sdram_controller_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=cpuqsys_new_sdram_controller_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0002_new_sdram_controller_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0002_new_sdram_controller_0_gen//cpuqsys_new_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): New_sdram_controller_0: Done RTL generation for module 'cpuqsys_new_sdram_controller_0'
 Info (12250): New_sdram_controller_0: "cpuqsys" instantiated altera_avalon_new_sdram_controller "new_sdram_controller_0"
 Info (12250): Nios2_gen2_0: "cpuqsys" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info (12250): Pio_auto_manual_0: Starting RTL generation for module 'cpuqsys_pio_auto_manual_0'
-Info (12250): Pio_auto_manual_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_auto_manual_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0003_pio_auto_manual_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0003_pio_auto_manual_0_gen//cpuqsys_pio_auto_manual_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio_auto_manual_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_auto_manual_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0003_pio_auto_manual_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0003_pio_auto_manual_0_gen//cpuqsys_pio_auto_manual_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio_auto_manual_0: Done RTL generation for module 'cpuqsys_pio_auto_manual_0'
 Info (12250): Pio_auto_manual_0: "cpuqsys" instantiated altera_avalon_pio "pio_auto_manual_0"
 Info (12250): Pio_display1_0: Starting RTL generation for module 'cpuqsys_pio_display1_0'
-Info (12250): Pio_display1_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_display1_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0004_pio_display1_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0004_pio_display1_0_gen//cpuqsys_pio_display1_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio_display1_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_display1_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0004_pio_display1_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0004_pio_display1_0_gen//cpuqsys_pio_display1_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio_display1_0: Done RTL generation for module 'cpuqsys_pio_display1_0'
 Info (12250): Pio_display1_0: "cpuqsys" instantiated altera_avalon_pio "pio_display1_0"
 Info (12250): Pio_leds_0: Starting RTL generation for module 'cpuqsys_pio_leds_0'
-Info (12250): Pio_leds_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_leds_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0005_pio_leds_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0005_pio_leds_0_gen//cpuqsys_pio_leds_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio_leds_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_leds_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0005_pio_leds_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0005_pio_leds_0_gen//cpuqsys_pio_leds_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio_leds_0: Done RTL generation for module 'cpuqsys_pio_leds_0'
 Info (12250): Pio_leds_0: "cpuqsys" instantiated altera_avalon_pio "pio_leds_0"
 Info (12250): Pio_left_right_0: Starting RTL generation for module 'cpuqsys_pio_left_right_0'
-Info (12250): Pio_left_right_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_left_right_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0006_pio_left_right_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0006_pio_left_right_0_gen//cpuqsys_pio_left_right_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio_left_right_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_left_right_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0006_pio_left_right_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0006_pio_left_right_0_gen//cpuqsys_pio_left_right_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio_left_right_0: Done RTL generation for module 'cpuqsys_pio_left_right_0'
 Info (12250): Pio_left_right_0: "cpuqsys" instantiated altera_avalon_pio "pio_left_right_0"
 Info (12250): Pio_ready_rsa_filter_0: Starting RTL generation for module 'cpuqsys_pio_ready_rsa_filter_0'
-Info (12250): Pio_ready_rsa_filter_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_ready_rsa_filter_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0007_pio_ready_rsa_filter_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0007_pio_ready_rsa_filter_0_gen//cpuqsys_pio_ready_rsa_filter_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio_ready_rsa_filter_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpuqsys_pio_ready_rsa_filter_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0007_pio_ready_rsa_filter_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0007_pio_ready_rsa_filter_0_gen//cpuqsys_pio_ready_rsa_filter_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio_ready_rsa_filter_0: Done RTL generation for module 'cpuqsys_pio_ready_rsa_filter_0'
 Info (12250): Pio_ready_rsa_filter_0: "cpuqsys" instantiated altera_avalon_pio "pio_ready_rsa_filter_0"
 Info (12250): Ram_0: Starting RTL generation for module 'cpuqsys_ram_0'
-Info (12250): Ram_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=cpuqsys_ram_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0008_ram_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0008_ram_0_gen//cpuqsys_ram_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Ram_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=cpuqsys_ram_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0008_ram_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0008_ram_0_gen//cpuqsys_ram_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Ram_0: Done RTL generation for module 'cpuqsys_ram_0'
 Info (12250): Ram_0: "cpuqsys" instantiated altera_avalon_onchip_memory2 "ram_0"
 Info (12250): Rom_0: Starting RTL generation for module 'cpuqsys_rom_0'
-Info (12250): Rom_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=cpuqsys_rom_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0009_rom_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0009_rom_0_gen//cpuqsys_rom_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Rom_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=cpuqsys_rom_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0009_rom_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0009_rom_0_gen//cpuqsys_rom_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Rom_0: Done RTL generation for module 'cpuqsys_rom_0'
 Info (12250): Rom_0: "cpuqsys" instantiated altera_avalon_onchip_memory2 "rom_0"
 Info (12250): Timer_0: Starting RTL generation for module 'cpuqsys_timer_0'
-Info (12250): Timer_0:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=cpuqsys_timer_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0010_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0010_timer_0_gen//cpuqsys_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Timer_0:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=cpuqsys_timer_0 --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0010_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0010_timer_0_gen//cpuqsys_timer_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Timer_0: Done RTL generation for module 'cpuqsys_timer_0'
 Info (12250): Timer_0: "cpuqsys" instantiated altera_avalon_timer "timer_0"
 Info (12250): Avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -8184,13 +8184,13 @@ Info (12250): Mm_interconnect_0: "cpuqsys" instantiated altera_mm_interconnect "
 Info (12250): Irq_mapper: "cpuqsys" instantiated altera_irq_mapper "irq_mapper"
 Info (12250): Rst_controller: "cpuqsys" instantiated altera_reset_controller "rst_controller"
 Info (12250): Cpu: Starting RTL generation for module 'cpuqsys_nios2_gen2_0_cpu'
-Info (12250): Cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=cpuqsys_nios2_gen2_0_cpu --dir=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0013_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_8614724707537233876.dir/0013_cpu_gen//cpuqsys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info (12250): Cpu: # 2023.10.03 04:14:17 (*) Starting Nios II generation
-Info (12250): Cpu: # 2023.10.03 04:14:17 (*)   Elaborating CPU configuration settings
-Info (12250): Cpu: # 2023.10.03 04:14:17 (*)   Creating all objects for CPU
-Info (12250): Cpu: # 2023.10.03 04:14:18 (*)   Generating RTL from CPU objects
-Info (12250): Cpu: # 2023.10.03 04:14:18 (*)   Creating plain-text RTL
-Info (12250): Cpu: # 2023.10.03 04:14:18 (*) Done Nios II generation
+Info (12250): Cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=cpuqsys_nios2_gen2_0_cpu --dir=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0013_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/User/AppData/Local/Temp/alt9633_4547753273901635268.dir/0013_cpu_gen//cpuqsys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info (12250): Cpu: # 2023.10.03 12:14:28 (*) Starting Nios II generation
+Info (12250): Cpu: # 2023.10.03 12:14:28 (*)   Elaborating CPU configuration settings
+Info (12250): Cpu: # 2023.10.03 12:14:28 (*)   Creating all objects for CPU
+Info (12250): Cpu: # 2023.10.03 12:14:28 (*)   Generating RTL from CPU objects
+Info (12250): Cpu: # 2023.10.03 12:14:28 (*)   Creating plain-text RTL
+Info (12250): Cpu: # 2023.10.03 12:14:29 (*) Done Nios II generation
 Info (12250): Cpu: Done RTL generation for module 'cpuqsys_nios2_gen2_0_cpu'
 Info (12250): Cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info (12250): Nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -8524,7 +8524,7 @@ Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "cpuqsy
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "cpuqsys:cpu|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/db/ip/cpuqsys/submodules/altera_reset_controller.v Line: 208
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "cpuqsys:cpu|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/db/ip/cpuqsys/submodules/altera_reset_controller.v Line: 220
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.10.03.04:14:27 Progress: Loading sld9b3765a4/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.10.03.12:14:41 Progress: Loading sld9b3765a4/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -8563,9 +8563,9 @@ Info (21057): Implemented 2318 device resources after synthesis - the final reso
     Info (21064): Implemented 160 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
     Info: Peak virtual memory: 5033 megabytes
-    Info: Processing ended: Tue Oct 03 04:14:40 2023
-    Info: Elapsed time: 00:01:05
-    Info: Total CPU time (on all processors): 00:00:46
+    Info: Processing ended: Tue Oct 03 12:14:57 2023
+    Info: Elapsed time: 00:01:42
+    Info: Total CPU time (on all processors): 00:01:00
 
 
 +------------------------------------------+
