@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'cpuqsys'
  * SOPC Builder design path: C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/cpuqsys.sopcinfo
  *
- * Generated: Mon Oct 02 19:45:25 CST 2023
+ * Generated: Mon Oct 02 20:41:48 CST 2023
  */
 
 /*
@@ -50,14 +50,15 @@
 
 MEMORY
 {
-    reset : ORIGIN = 0x0, LENGTH = 32
-    rom_0 : ORIGIN = 0x20, LENGTH = 8160
-    ram_0 : ORIGIN = 0x2000, LENGTH = 8192
+    reset : ORIGIN = 0x4000000, LENGTH = 32
+    rom_0 : ORIGIN = 0x4000020, LENGTH = 8160
+    ram_0 : ORIGIN = 0x4002000, LENGTH = 8192
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_rom_0 = 0x0;
-__alt_mem_ram_0 = 0x2000;
+__alt_mem_new_sdram_controller_0 = 0x0;
+__alt_mem_rom_0 = 0x4000000;
+__alt_mem_ram_0 = 0x4002000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -66,12 +67,9 @@ OUTPUT_ARCH( nios2 )
 ENTRY( _start )
 
 /*
- * The alt_load() facility is enabled. This typically happens when there isn't
- * an external bootloader (e.g. flash bootloader).
- * The LMA (aka physical address) of each loaded section is
- * set to the .text memory device.
- * The HAL alt_load() routine called from crt0 copies sections from
- * the .text memory to RAM as needed.
+ * The alt_load() facility is disabled. This typically happens when an
+ * external bootloader is provided or the application runs in place.
+ * The LMA (aka physical address) of each section defaults to its VMA.
  */
 
 SECTIONS
@@ -211,14 +209,7 @@ SECTIONS
         . = ALIGN(4);
     } > rom_0 = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
 
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .rodata : AT ( LOADADDR (.text) + SIZEOF (.text) )
+    .rodata :
     {
         PROVIDE (__ram_rodata_start = ABSOLUTE(.));
         . = ALIGN(4);
@@ -230,14 +221,7 @@ SECTIONS
 
     PROVIDE (__flash_rodata_start = LOADADDR(.rodata));
 
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .rwdata : AT ( LOADADDR (.rodata) + SIZEOF (.rodata) )
+    .rwdata :
     {
         PROVIDE (__ram_rwdata_start = ABSOLUTE(.));
         . = ALIGN(4);
@@ -291,21 +275,9 @@ SECTIONS
      * The output section used for the heap is treated in a special way,
      * i.e. the symbols "end" and "_end" are added to point to the heap start.
      *
-     * Because alt_load() is enabled, these sections have
-     * their LMA set to be loaded into the .text memory region.
-     * However, the alt_load() code will NOT automatically copy
-     * these sections into their mapped memory region.
-     *
      */
 
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .rom_0 LOADADDR (.rwdata) + SIZEOF (.rwdata) : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
+    .rom_0 :
     {
         PROVIDE (_alt_partition_rom_0_start = ABSOLUTE(.));
         *(.rom_0 .rom_0. rom_0.*)
@@ -315,14 +287,7 @@ SECTIONS
 
     PROVIDE (_alt_partition_rom_0_load_addr = LOADADDR(.rom_0));
 
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .ram_0 : AT ( LOADADDR (.rom_0) + SIZEOF (.rom_0) )
+    .ram_0 :
     {
         PROVIDE (_alt_partition_ram_0_start = ABSOLUTE(.));
         *(.ram_0 .ram_0. ram_0.*)
@@ -382,7 +347,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x4000;
+__alt_data_end = 0x4004000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -398,4 +363,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x4000 );
+PROVIDE( __alt_heap_limit    = 0x4004000 );

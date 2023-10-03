@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'cpuqsys'
  * SOPC Builder design path: C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/cpuqsys.sopcinfo
  *
- * Generated: Mon Oct 02 19:45:25 CST 2023
+ * Generated: Mon Oct 02 20:41:48 CST 2023
  */
 
 /*
@@ -65,11 +65,11 @@
  *
  */
 
-#define RAM_0_REGION_BASE 0x2000
+#define RAM_0_REGION_BASE 0x4002000
 #define RAM_0_REGION_SPAN 8192
-#define RESET_REGION_BASE 0x0
+#define RESET_REGION_BASE 0x4000000
 #define RESET_REGION_SPAN 32
-#define ROM_0_REGION_BASE 0x20
+#define ROM_0_REGION_BASE 0x4000020
 #define ROM_0_REGION_SPAN 8160
 
 

@@ -16,16 +16,16 @@
 <td width="20%" bgcolor="#77BBFF">CPU:</td><td>nios2_gen2_0</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Settings File:</td><td>.\settings.bsp</td>
+<td width="20%" bgcolor="#77BBFF">BSP Settings File:</td><td>settings.bsp</td>
 </tr>
 <tr mode="wrap">
 <td width="20%" bgcolor="#77BBFF">BSP Version:</td><td>default</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>Oct 2, 2023 7:45:24 PM</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>Oct 2, 2023 8:42:08 PM</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1696297524929</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1696300928871</td>
 </tr>
 <tr mode="wrap">
 <td width="20%" bgcolor="#77BBFF">BSP Generated Location:</td><td>C:\Users\User\Desktop\P1SO\daniel_garcia\cpuqsys\software\cpuqsyslogic_bsp</td>
@@ -38,19 +38,22 @@
 <th align="left" width="20%">Slave Descriptor</th><th align="left" width="40%">Address Range</th><th align="left" width="20%">Size</th><th align="left" width="20%">Attributes</th>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>pio_continue_0</td><td>0x00005030 - 0x0000503F</td><td>16</td><td class="listing">&nbsp;</td>
+<td>pio_continue_0</td><td>0x04005030 - 0x0400503F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>pio_leds_0</td><td>0x00005020 - 0x0000502F</td><td>16</td><td class="listing">&nbsp;</td>
+<td>pio_leds_0</td><td>0x04005020 - 0x0400502F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>timer_0</td><td>0x00005000 - 0x0000501F</td><td>32</td><td class="listing">timer</td>
+<td>timer_0</td><td>0x04005000 - 0x0400501F</td><td>32</td><td class="listing">timer</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>ram_0</td><td>0x00002000 - 0x00003FFF</td><td>8192</td><td class="listing">memory</td>
+<td>ram_0</td><td>0x04002000 - 0x04003FFF</td><td>8192</td><td class="listing">memory</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>rom_0</td><td>0x00000000 - 0x00001FFF</td><td>8192</td><td class="listing">memory, non-volatile</td>
+<td>rom_0</td><td>0x04000000 - 0x04001FFF</td><td>8192</td><td class="listing">memory, non-volatile</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>new_sdram_controller_0</td><td>0x00000000 - 0x03FFFFFF</td><td>67108864</td><td class="listing">memory</td>
 </tr>
 </table>
 <br>
@@ -59,6 +62,15 @@
 <table border="1" bgcolor="#FFFFCC" width="90%">
 <tr bgcolor="#77BBFF" mode="wrap">
 <th align="left" width="15%">Region</th><th align="left" width="40%">Address Range</th><th align="left" width="15%">Size</th><th align="left" width="15%">Memory</th><th align="left" width="15%">Offset</th>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>ram_0</td><td>0x04002000 - 0x04003FFF</td><td>8192</td><td>ram_0</td><td>0</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>rom_0</td><td>0x04000020 - 0x04001FFF</td><td>8160</td><td>rom_0</td><td>32</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>reset</td><td>0x04000000 - 0x0400001F</td><td>32</td><td>rom_0</td><td>0</td>
 </tr>
 </table>
 <br>
@@ -477,7 +489,7 @@
 <td width="20%">Default Value:</td><td>0</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>1</td>
+<td width="20%">Value:</td><td>0</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>Boolean</td>

@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'cpuqsys'
 # SOPC Builder design path: C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/cpuqsys.sopcinfo
 #
-# Generated: Mon Oct 02 19:45:25 CST 2023
+# Generated: Mon Oct 02 20:37:22 CST 2023
 
 # DO NOT MODIFY THIS FILE
 #
@@ -46,8 +46,11 @@
 # The cache attribute is specified which improves GDB performance
 # by allowing GDB to cache memory contents on the host.
 
+# new_sdram_controller_0
+memory 0x0 0x4000000 cache
+
 # rom_0
-memory 0x0 0x2000 cache
+memory 0x4000000 0x4002000 cache
 
 # ram_0
-memory 0x2000 0x4000 cache
+memory 0x4002000 0x4004000 cache

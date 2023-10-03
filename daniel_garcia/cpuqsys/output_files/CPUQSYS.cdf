@@ -5,8 +5,8 @@ JedecChain;
 
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
-	P ActionCode(Ign)
-		Device PartName(5CSEMA5) MfrSpec(OpMask(0));
+	P ActionCode(Cfg)
+		Device PartName(5CSEMA5F31) Path("C:/Users/User/Desktop/P1SO/daniel_garcia/cpuqsys/output_files/") File("CPUQSYS.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
